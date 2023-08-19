@@ -74,25 +74,15 @@
 
 
     .books{
-          /*display: flex;
-          flex-direction: row;
-          */
-        display: grid;
-        background-color: #626161;
-        border-radius: 10px;
-        grid-template-areas: 
-          "book_of_day sale_of_day sale_of_day sale_of_day"
-          "book_of_day sale_of_day sale_of_day sale_of_day"
-          "book_of_day sale_of_day sale_of_day sale_of_day";
+
+      
     }
       .books .book_of_day{
-        grid-area: book_of_day;
-        grid-gap: 32px;
+        
+     
       }
         .books .day_book__img{
-          height: 737px;
-          width: 466px;
-          margin-top: 30px;
+     
         }
         .books .day_book__title{
 
@@ -100,25 +90,13 @@
 
 
       .books .sale_of_day{
-        display: grid;
-        grid-area: sale_of_day;
-        grid-template-areas: 
-          "title title " 
-          "img img"
-/*          "img img img";*/;
-        margin-left: 50px;
-        grid-gap: 32px;
+
       }
         .sale_of_day .sale_of_day__title{
-          grid-area: title;
-          text-align: center;
-          height: 99px;
+      
         }
         .sale_of_day .sale_of_day__img{
-          width: 260px;
-          height: 150px;
-          margin-bottom: 5px;
-          grid-area: img;
+      
         }
 
 
