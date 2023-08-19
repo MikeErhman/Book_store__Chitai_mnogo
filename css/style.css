@@ -74,11 +74,12 @@
 
 
     .books{
-
-      
+      display: flex;
+      flex-direction: row;
     }
       .books .book_of_day{
-        
+        display: flex;
+        flex-direction: column;
      
       }
         .books .day_book__img{
@@ -90,13 +91,22 @@
 
 
       .books .sale_of_day{
-
+        display: grid;
+/*        grid-area: */
+/*        "title title title"*/
+/*        "img img img"*/
+/*        "img img img"*/
+        ;
       }
         .sale_of_day .sale_of_day__title{
-      
+          display: grid;
+        grid-area: title;
         }
         .sale_of_day .sale_of_day__img{
-      
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+/*        
+
         }
 
 
