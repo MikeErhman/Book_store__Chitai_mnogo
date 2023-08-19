@@ -103,9 +103,9 @@
         display: grid;
         grid-area: sale_of_day;
         grid-template-areas: 
-          "title title title" 
-          "img img img"
-          "img img img";
+          "title title " 
+          "img img"
+/*          "img img img";*/;
         margin-left: 50px;
         grid-gap: 32px;
       }
@@ -116,7 +116,7 @@
         }
         .sale_of_day .sale_of_day__img{
           width: 260px;
-          height: 350px;
+          height: 150px;
           margin-bottom: 5px;
           grid-area: img;
         }
