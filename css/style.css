@@ -83,7 +83,8 @@
      
       }
         .books .day_book__img{
-     
+            height: 737px;
+            width: 466px;
         }
         .books .day_book__title{
 
@@ -97,8 +98,8 @@
 /*        grid-area: */
 /*        "title title title"*/
 /*        "img img img"*/
-/*        "img img img"*/
-        ;
+/*        "img img img";*/
+        
       }
         .sale_of_day .sale_of_day__title{
           display: grid;
