@@ -91,7 +91,9 @@
 
 
       .books .sale_of_day{
-        display: grid;
+        display: flex;
+        flex-direction: column;
+
 /*        grid-area: */
 /*        "title title title"*/
 /*        "img img img"*/
@@ -100,10 +102,12 @@
       }
         .sale_of_day .sale_of_day__title{
           display: grid;
+          text-align: center;
         grid-area: title;
         }
         .sale_of_day .sale_of_day__img{
           display: grid;
+          gap: 50px;
           grid-template-columns: 1fr 1fr 1fr;
 /*        
 
