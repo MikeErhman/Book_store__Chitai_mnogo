@@ -10,15 +10,21 @@ html{
 }
 
 .wrapper{
+
+  position: relative;
   background-color: #363636;
   width: 100%;
-  height: 2000px;
-  C
+  height: 150vh;
+  
 }
   .container {
+    position: absolute;
     margin: 0 auto 0 auto;
     width: 1600px;
-    height: 2000px;
+    height: 75.6%;
+    right: 0;
+    left: 0;
+/*    height: 100%;*/
     background-color: #363636; }
     .container .menu_and_slider{
       display: flex;
@@ -104,7 +110,8 @@ html{
         width: 60%;
         height: 58px;
         border: none;
-        border-radius: 10px; }
+        border-radius: 10px; 
+      }
       .container .search .search_btn {
         display: flex;
         background-color: #3CBB9D;
