@@ -1,27 +1,88 @@
 
+html{
+    box-sizing: border-box
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper{
   background-color: #363636;
   width: 100%;
+  height: 2000px;
+  C
 }
   .container {
     margin: 0 auto 0 auto;
-    width: 80%;
-    height: 10000px;
+    width: 1600px;
+    height: 2000px;
     background-color: #363636; }
-    .container .slider {
+    .container .menu_and_slider{
       display: flex;
       align-items: flex-end;
       justify-items: center;
       border-radius: 0px 0px 10px 10px;
       height: 250px;
-      background-color: #c9c9c9; }
-      .container .slider .menu {
+      background-color: #c9c9c9; 
+      width: 100%;
+    }
+      .container .menu_and_slider .slider{
+        position: absolute ;
+        width: 100%
+        height:100%;
+      }
+        .swiper {
+          width:1600px;
+          height: 331px;
+/*          border: 10px solid rgba(54, 54, 54, 1.0);*/
+          border-radius: 10px;
+/*          left: 60px;*/
+        }
+        
+/*        .swiper:after{
+          content: '';
+          display: block;
+          width: 100%;
+          height: 20px;
+          position: absolute;
+          bottom: 0;
+          background-color: #0c0ce8;
+          border-radius: 15px;
+}*/
+
+
+        .shadow{
+          position: absolute;
+          width: 100%;
+          height:100%;
+          background-color: rgba(0, 0, 0, .6);
+          z-index: 11;
+          border-radius: 10px;
+        }
+          #swiper_1{
+            object-fit:cover;
+            display:block;
+            height:100%;
+            width: 100%;
+          }
+          #swiper_2{
+            object-fit:cover;      
+/*            right: 100px;*/
+            display:block;
+            height:100%;
+            width: 100%;
+          }
+      .container .menu_and_slider .menu {
+        z-index: 12;
         background-color: rgba(0, 0, 0, 0);
         font-size: 30px;
         width: 100%;
         text-align: center;
         padding: 0 auto 0 auto; }
-        .container .slider .menu a {
+        .container .menu_and_slider .menu a {
           margin: 0 70px 0 70px;
           text-decoration: none;
           outline: none;
@@ -34,17 +95,19 @@
       align-items: center;
       padding-right: 60px; }
       .container .search .logo {
+
         font-size: 22px;
-        margin: 0 auto 0 60px;
-        color: #8B5CC5; }
+        margin: 0 30px 0 60px;
+        color: #3CBB9D; }
       .container .search .text {
+        font-family: 'Ubuntu', sans-serif;
         width: 60%;
         height: 58px;
         border: none;
         border-radius: 10px; }
       .container .search .search_btn {
         display: flex;
-        background-color: #8B5CC5;
+        background-color: #3CBB9D;
         margin-left: 15px;
         height: 58px;
         width: 111px;
@@ -58,60 +121,217 @@
           width: 20px;
           margin-left: 5px; }
       .container .search .login {
+        margin-left: 15px;
         display: flex;
         flex-direction: row;
         color: white;
-        justify-items: space-between; }
+        justify-items: space-between;
+        align-items:center; }
+        .login .login__text {
+          margin-left: 10px;
+        }
       .container .search .menu_book {
+        margin-left: 15px;
         display: flex;
         flex-direction: row;
         color: white;
         margin-left: 15px;
         gap: 10px; }
         .container .search .menu_book .menu_book__text {
+          font-family: 'Ubuntu', sans-serif;
           width: 80px; }
 
 
 
+
     .books{
+      position: relative;
       display: flex;
       flex-direction: row;
+      background-color: #626161;
+      border-radius: 10px 10px 0 0;
+      height: 100%;
     }
       .books .book_of_day{
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
-     
+        position: absolute;
+        margin-left: 64px;
+        height: 875px;
+        width: 480px;
       }
-        .books .day_book__img{
-            height: 737px;
-            width: 466px;
-        }
-        .books .day_book__title{
+      .books .book_of_day .day_book__div{
+        margin-top: 20px;
+        position: relative;
+        height: 100%;
+        width: 100%;
+       
+      }
 
-        }
+          .day_book__div .price_place{
+            display: flex;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            position: absolute;
+            top: 21px;
+            right: 21px;
+            height: 50px;
+            width: 110px;
+            background-color: #3CBB9D;
+            z-index: 8;
+            border-radius: 8px;
+            padding-left: 30px;
+            align-items: center;
+          }
+          .books .book_of_day .day_book__div .shadow{
+              display: flex;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              font-family: 'Ubuntu', sans-serif;
+              height:10%;
+              background-color: rgba(0, 0, 0, .7);
+              z-index: 8;
+              border-radius: 0;
+              color: white;
+              align-items:center;
+              padding: 10px;
+              text-decoration: none;
+          }
+            .books .book_of_day .day_book__div .shadow a{
+              text-decoration: none;
+              color: white;
+            }
+           
+          .books .day_book__img{
+            position: absolute;
+/*              height: 755px;*/
+/*              width: 490px;*/
+            height: 100%;
+            width: 100%;
+/*              gap: 32px;*/
+              
+          }
+          .books .day_book__title{
+            color: white;
+            text-align: center;
+            font-size: 35px;
+            font-family: 'Ubuntu', sans-serif;
+
+          }
+
+
+
 
 
       .books .sale_of_day{
+        margin-top: 20px;
+        position: absolute;
+        right: 0;
+        margin-right: 64px;
         display: flex;
         flex-direction: column;
 
-/*        grid-area: */
-/*        "title title title"*/
+/*        grid-area: 
+/*        "title title title"
 /*        "img img img"*/
 /*        "img img img";*/
         
       }
+        .sale_of_day__div{
+          margin-top: 20px;
+          position: relative;
+          right: 0;
+        }
+            .sale_of_day__div .price_place__sale{
+              display: flex;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            height: 38px;
+            width: 141px;
+            background-color: rgba(0, 0, 0, .7);
+            z-index: 8;
+            border-radius: 8px;
+            text-decoration: line-through;
+            text-align: center;
+            align-items: center;
+            padding-left: 15px;
+            }
+
+            .sale_of_day__div .price_place{
+              display: flex;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            height: 38px;
+            width: 72px;
+            background-color: #3CBB9D;
+            z-index: 8; 
+            border-radius: 8px;
+            text-align: center;
+            align-items: center;
+            padding-left: 15px;
+            }
         .sale_of_day .sale_of_day__title{
           display: grid;
           text-align: center;
-        grid-area: title;
+          color: white;
+          font-size: 35px;
+          font-family: 'Ubuntu', sans-serif;
         }
-        .sale_of_day .sale_of_day__img{
-          display: grid;
-          gap: 50px;
-          grid-template-columns: 1fr 1fr 1fr;
-/*        
 
+          .sale_of_day .sale_of_day__imgs{
+            position: relative;
+            display: grid;
+            gap:40px;
+            margin-right: 50px;
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+          .sale_of_day .sale_of_day__imgs .sale_of_day__div .shadow{
+              display: flex;
+              position: absolute;
+              bottom: 9px;
+              width: 100%;
+              height:20%;
+              background-color: rgba(0, 0, 0, .6);
+              z-index: 11;
+              border-radius: 0;
+              color: white;
+              font-family: 'Ubuntu', sans-serif;
+              align-items: center;
+              padding: 10px;
+          }
+
+          .sale_of_day .sale_of_day__imgs .sale_of_day__div .shadow a{
+            text-decoration: none;
+            color: white;
+          }
+        .sale_of_day__imgs .sale_of_day__img{
+          width: 260px;
+          height: 350px;
+          margin-bottom: 5px;
         }
+
+        .more_sales{
+         width:510px;
+         height: 82px;
+         margin: 20px auto 20px auto;
+         border-radius: 10px;
+         background-color: #3CBB9D;
+         border:none;
+         color: white;
+         font-family: 'Ubuntu', sans-serif;
+         font-size: 30px;
+        }
+
+
+
 
 
