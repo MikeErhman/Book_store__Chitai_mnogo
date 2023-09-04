@@ -1,0 +1,54 @@
+html{
+    box-sizing: border-box
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+	.container{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+		.book_page{
+			display: flex;
+			flex-direction: column;
+		}
+
+			.book_of_day__title_and_price{
+				display: flex;
+				flex-direction: row;
+			}
+				.book_of_day__img{
+					height: 900px;
+					width: 600px;
+				}
+
+				.title{
+					width: 100%;
+					height: 400px;
+/*					background-color: darkred;*/
+					color: white;
+					font-size: 30px;
+        			font-family: 'Ubuntu', sans-serif;
+				}
+					.title_of_book{
+						margin: 32px 0 0 91px;
+					}
+					.first_desc_of_book{
+						margin: 28px 0 0 48px;
+						width: 680px;
+						height: 128px;
+
+					}
+
+
+			.book_of_day__description_and_quotes{
+
+			}
+
+		
