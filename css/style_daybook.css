@@ -12,6 +12,7 @@ html{
 		position: relative;
 		display: flex;
 		flex-direction: column;
+		height: 100%;
 	}
 
 		.book_page{
@@ -42,6 +43,7 @@ html{
 					.title_of_book{
 						margin: 32px 0 0 91px;
 						font-weight: bold;
+						font-size: 52px;
 					}
 					.first_desc_of_book{
 						margin: 28px 0 0 48px;
@@ -49,13 +51,13 @@ html{
 						height: 128px;
 					}
 					.author{
-						margin: 28px 0 0 28px;
+						margin: 28px 0 0 48px;
 
 					}
 				.stars_and_buy{
 					height: 73px;
 					width: 185px;
-					margin: 35px 0 0 22px;
+					margin: 35px 0 0 48px;
 					background-color: #363636;
 					border-radius: 10px;
 				}
@@ -111,13 +113,13 @@ html{
 							position: absolute;
 							top: 41px;
 							right: 12px;
-							font-size: 17px;
+							font-size: 12px;
 						}
 
 				.buy_and_like{
 					position: absolute;
 					top: 323px;
-					right: 307px;
+					right: 282px;
 					background-color: #3CBB9D;
 					width: 258px;
 					height: 71px;
@@ -129,6 +131,7 @@ html{
 						left: 15px;
 						width: 35px;
 						height: 32px;
+						font-size: 22px;
 					}
 					.favorite_text{
 						position: absolute;
@@ -152,7 +155,7 @@ html{
 				.buy_form{
 					top: 400px;
 /*					right: 150px;*/
-					left: 22px;
+/*					left: 22px;*/
 					position: absolute;
 					display: flex;
 					flex-direction: row;
@@ -160,8 +163,37 @@ html{
 					width: 610px;
 					height: 337px;
 					margin-top: 73px;
+					margin:73px 0 0 48px;
 					border-radius: 10px;
+					font-size: 22px;
 				}
+					.btn_buy{
+						position: absolute;
+						padding-top: 10px;
+						width: 482px;
+						height: 53px;
+						background-color: #3CBB9D;
+						right: 64px;
+						top: 21px;
+						border-radius: 10px;
+						text-align: center;
+
+					}
+					.table_prices{
+						position: absolute;
+						top: 100px;
+					}
+					table{
+						line-height: 40px;
+						font-weight: lighter;
+						font-size: 22px;
+					}
+					.horLine{
+						width: 100px;
+						height: 4px;
+						background-color: white;
+						padding: 0 0 0 50px;
+					}
 
 			.book_of_day__description_and_quotes{
 
