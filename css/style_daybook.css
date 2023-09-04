@@ -24,11 +24,14 @@ html{
 				flex-direction: row;
 			}
 				.book_of_day__img{
-					height: 900px;
-					width: 600px;
+					height: 810px;
+					width: 539px;
+					margin: 32px 0 0 122px;
 				}
 
 				.title{
+					display: flex;
+					flex-direction: column;
 					width: 100%;
 					height: 400px;
 /*					background-color: darkred;*/
@@ -38,13 +41,78 @@ html{
 				}
 					.title_of_book{
 						margin: 32px 0 0 91px;
+						font-weight: bold;
 					}
 					.first_desc_of_book{
 						margin: 28px 0 0 48px;
 						width: 680px;
 						height: 128px;
+					}
+					.author{
+						margin: 28px 0 0 28px;
 
 					}
+				.stars_and_buy{
+					height: 73px;
+					width: 185px;
+					margin: 35px 0 0 22px;
+					background-color: #363636;
+					border-radius: 10px;
+				}
+					.grades{
+						position: relative;
+						display: flex;
+						flex-direction: row;
+
+					}
+						.stars{
+							position: absolute;
+							left: 13px;
+							top: 10px;
+							width: 28;
+							height: 23px;
+						}
+						.stars_sum{
+							position: absolute;
+/*							width: 72px;*/
+							top: 9px;
+							left: 49px;
+							font-size: 22px;
+							color: #8B5CC5;
+						}
+						.sum{
+							position: absolute;
+							top: 37px;
+							left: 16px;
+							font-size: 22px;
+						}
+						.vert_line{
+							position: absolute;
+							right: 92px;
+							top: 13px;
+							background-color: #515151;
+							height:48px;
+							width: 2px;
+						}
+						.notes{
+							position: absolute;
+							right: 56px;
+							top: 10px;
+							width: 20px;
+							height: 20px;
+						}
+						.notes_sum{
+							position: absolute;
+							top: 8px;
+							right: 15px;
+							font-size: 22px;
+						}
+						.notes_text{
+							position: absolute;
+							top: 41px;
+							right: 12px;
+							font-size: 17px;
+						}
 
 
 			.book_of_day__description_and_quotes{
