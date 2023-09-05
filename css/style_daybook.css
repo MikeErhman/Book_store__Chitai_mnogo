@@ -1,5 +1,7 @@
 html{
-    box-sizing: border-box
+    box-sizing: border-box;
+/*    height: 1700px;*/
+background-color: #363636;
 }
 
 *, *::after, *::before{
@@ -7,12 +9,15 @@ html{
     margin: 0;
     padding: 0;
 }
-
+.wrapper{
+height: 100%;
+width: 1905px;
+}
 	.container{
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		height: 100%;
+		height: 1700px;
 	}
 
 		.book_page{
@@ -25,7 +30,7 @@ html{
 				flex-direction: row;
 			}
 				.book_of_day__img{
-					height: 810px;
+					height: 780px;
 					width: 539px;
 					margin: 32px 0 0 122px;
 				}
@@ -166,6 +171,7 @@ html{
 					margin:73px 0 0 48px;
 					border-radius: 10px;
 					font-size: 22px;
+					font-weight: bold;
 				}
 					.btn_buy{
 						position: absolute;
@@ -185,18 +191,76 @@ html{
 					}
 					table{
 						line-height: 40px;
+/*						font-weight: lighter;*/
+/*						font-size: 22px;*/
+					}
+					th{
 						font-weight: lighter;
-						font-size: 22px;
 					}
 					.horLine{
-						width: 100px;
-						height: 4px;
-						background-color: white;
-						padding: 0 0 0 50px;
+						width: 569px;
+						height: 2px;
+						background-color: #515151;
+						margin: 0 0 0 20px;
+					}
+					.final_price_text{
+						position: absolute;
+						left: 0;
+						margin-left: 25px;
+						margin-top: 10px;
+					}
+					.final_price_num{
+						position: absolute;
+						right: 0;
+						margin-top: 10px;
+						margin-right: 7px;
 					}
 
 			.book_of_day__description_and_quotes{
+				position: relative;
+				width: 1167px;
+				height: 500px;
+/*				background-color: darkcyan;*/
+				margin: 73px 0 0 122px;
+				color: white;
+				font-size: 22px;
+				font-family: 'Ubuntu', sans-serif;	
 
 			}
+				.description_naw{
+					display: flex;
+					gap: 28px;
+				}
+
+				.vert_line_naw{
+					margin-top: 20px;
+					width: 1150px;
+					height: 2px;
+					background-color: #363636;
+				}
+					.naw_sqre{
+						height: 8px;
+						width: 102px;
+						background-color: #3CBB9D;
+
+					}
+				.about_book__title{
+					margin-top: 26px;
+					font-size: 27px;
+					font-weight: bold;
+				}
+				.about_book__text{
+					margin-top: 14px;
+					line-height: 30px;
+				}
+				.detail_info{
+					margin-top: 45px;
+					font-weight: bold;
+				}
+				.detail_info__text{
+					margin-top: 20px;
+					font-weight: lighter;
+					line-height: 35px;
+				}
 
 		
