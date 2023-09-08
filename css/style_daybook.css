@@ -17,9 +17,13 @@ width: 1905px;
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		height: 1700px;
+		height: 1900px;
 	}
 
+		a{
+			text-decoration: none;
+			color: white;
+		}
 		.book_page{
 			display: flex;
 			flex-direction: column;
@@ -46,12 +50,12 @@ width: 1905px;
         			position: relative;
 				}
 					.title_of_book{
-						margin: 32px 0 0 91px;
+						margin: 64px 0 0 91px;
 						font-weight: bold;
 						font-size: 52px;
 					}
 					.first_desc_of_book{
-						margin: 28px 0 0 48px;
+						margin: 0px 0 0 48px;
 						width: 680px;
 						height: 128px;
 					}
@@ -61,7 +65,7 @@ width: 1905px;
 					}
 				.stars_and_buy{
 					height: 73px;
-					width: 185px;
+					width: 220px;
 					margin: 35px 0 0 48px;
 					background-color: #363636;
 					border-radius: 10px;
@@ -71,7 +75,7 @@ width: 1905px;
 						display: flex;
 						flex-direction: row;
 						height: 73px;
-						width: 185px;
+						width: 220px;
 					}
 						.stars{
 							position: absolute;
@@ -95,7 +99,7 @@ width: 1905px;
 						}
 						.stars_and_buy .vert_line{
 							position: absolute;
-							right: 92px;
+							right: 110px;
 							top: 13px;
 							background-color: #515151;
 							height:48px;
@@ -103,7 +107,7 @@ width: 1905px;
 						}
 						.notes{
 							position: absolute;
-							right: 56px;
+							right: 80px;
 							top: 10px;
 							width: 20px;
 							height: 20px;
@@ -111,19 +115,19 @@ width: 1905px;
 						.notes_sum{
 							position: absolute;
 							top: 8px;
-							right: 15px;
+							right: 10px;
 							font-size: 22px;
 						}
 						.notes_text{
 							position: absolute;
 							top: 41px;
 							right: 12px;
-							font-size: 12px;
+							font-size: 18px;
 						}
 
 				.buy_and_like{
 					position: absolute;
-					top: 323px;
+					top: 328px;
 					right: 282px;
 					background-color: #3CBB9D;
 					width: 258px;
@@ -229,11 +233,14 @@ width: 1905px;
 			}
 				.description_naw{
 					display: flex;
-					gap: 28px;
+/*					gap: 28px;*/
 				}
+					.description_naw p{
+						height: 50px;
+						margin: 0 10px 0 10px;
+					}
 
 				.vert_line_naw{
-					margin-top: 20px;
 					width: 1150px;
 					height: 2px;
 					background-color: #363636;
@@ -244,23 +251,84 @@ width: 1905px;
 						background-color: #3CBB9D;
 
 					}
+
+					.naw_sqre-center{
+						margin-left: 100px;
+						height: 8px;
+						width: 102px;
+						background-color: #3CBB9D;
+					}
+					.naw_sqre-right{
+						margin-left: 210px;
+						height: 8px;
+						width: 102px;
+						background-color: #3CBB9D;
+					}
 				.about_book__title{
+					display: none;
 					margin-top: 26px;
 					font-size: 27px;
 					font-weight: bold;
 				}
 				.about_book__text{
+					display: none;
 					margin-top: 14px;
 					line-height: 30px;
 				}
 				.detail_info{
+					display: none;
 					margin-top: 45px;
 					font-weight: bold;
 				}
 				.detail_info__text{
+					display: none;
 					margin-top: 20px;
 					font-weight: lighter;
 					line-height: 35px;
 				}
 
-		
+
+
+
+
+				.quotes_book_div{
+					width: 1195px; 
+					height: 735px;
+					margin-top: 70px;
+					background-color: #ADADAD;
+					display: flex;
+					flex-direction: column;
+					border-radius: 10px;
+
+				}
+					.quotes_book_div p{
+						margin-top: 50px;
+						margin-left: 100px;
+
+						
+					}
+					.qoutes_book__text{
+						font-family: inter;
+						border-radius: 20px;
+						background-color: #363636;
+						width: 930px;
+						margin: 5px auto 20px auto;
+						height: 110px;
+/*						text-align: center;*/
+						padding: 30px 20px 0 20px;
+						font-size: 20px;
+					}
+						.qoutes_book__text::before{
+					    content: "“"; /* Левая кавычка */
+					    font-size: 70px; /* Размер текста кавычек */
+					    color: #3CBB9D; /* Цвет кавычек */
+					    line-height: 0px; /* Текст не занимает место */
+					   }
+					.qoutes_book__text + .qoutes_book__text{
+						height: 230px;
+					}
+
+					.qoutes_book__text + .qoutes_book__text + .qoutes_book__text{
+						height: 200px;
+
+					}

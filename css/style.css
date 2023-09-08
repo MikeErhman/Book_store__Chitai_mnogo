@@ -110,11 +110,12 @@ height: 100%;
         font-size: 22px;
         font-family: 'Ubuntu', sans-serif;
       }
-      .container .search .logo {
+      .container .search .logo a{
 
         font-size: 22px;
         margin: 0 30px 0 60px;
-        color: #3CBB9D; }
+        color: #3CBB9D;
+        text-decoration: none; }
       .container .search .text {
         font-family: 'Ubuntu', sans-serif;
         width: 60%;
