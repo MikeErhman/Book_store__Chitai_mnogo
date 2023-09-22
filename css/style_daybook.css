@@ -17,6 +17,7 @@ width: 1905px;
 		position: relative;
 		display: flex;
 		flex-direction: column;
+
 		height: 1900px;
 	}
 
@@ -24,6 +25,8 @@ width: 1905px;
 			text-decoration: none;
 			color: white;
 		}
+/* 		height: 1700px; */
+	}
 		.book_page{
 			display: flex;
 			flex-direction: column;
@@ -51,11 +54,18 @@ width: 1905px;
 				}
 					.title_of_book{
 						margin: 64px 0 0 91px;
+
+/* 						margin: 32px 0 0 91px; */
+
 						font-weight: bold;
 						font-size: 52px;
 					}
 					.first_desc_of_book{
+
 						margin: 0px 0 0 48px;
+
+/* 						margin: 28px 0 0 48px; */
+
 						width: 680px;
 						height: 128px;
 					}
@@ -65,7 +75,11 @@ width: 1905px;
 					}
 				.stars_and_buy{
 					height: 73px;
+
 					width: 220px;
+
+/* 					width: 185px; */
+
 					margin: 35px 0 0 48px;
 					background-color: #363636;
 					border-radius: 10px;
@@ -75,7 +89,10 @@ width: 1905px;
 						display: flex;
 						flex-direction: row;
 						height: 73px;
+
 						width: 220px;
+
+/* 						width: 185px; */
 					}
 						.stars{
 							position: absolute;
@@ -99,7 +116,11 @@ width: 1905px;
 						}
 						.stars_and_buy .vert_line{
 							position: absolute;
+
 							right: 110px;
+
+/* 							right: 92px; */
+
 							top: 13px;
 							background-color: #515151;
 							height:48px;
@@ -107,7 +128,11 @@ width: 1905px;
 						}
 						.notes{
 							position: absolute;
+
 							right: 80px;
+
+/* 							right: 56px; */
+
 							top: 10px;
 							width: 20px;
 							height: 20px;
@@ -115,19 +140,30 @@ width: 1905px;
 						.notes_sum{
 							position: absolute;
 							top: 8px;
+
 							right: 10px;
+
+/* 							right: 15px; */
+
 							font-size: 22px;
 						}
 						.notes_text{
 							position: absolute;
 							top: 41px;
 							right: 12px;
+
 							font-size: 18px;
+
+/* 							font-size: 12px; */
 						}
 
 				.buy_and_like{
 					position: absolute;
+
 					top: 328px;
+
+/* 					top: 323px; */
+
 					right: 282px;
 					background-color: #3CBB9D;
 					width: 258px;
@@ -233,6 +269,7 @@ width: 1905px;
 			}
 				.description_naw{
 					display: flex;
+
 /*					gap: 28px;*/
 				}
 					.description_naw p{
@@ -241,6 +278,11 @@ width: 1905px;
 					}
 
 				.vert_line_naw{
+/* 					gap: 28px; */
+				}
+
+				.vert_line_naw{
+/* 					margin-top: 20px; */
 					width: 1150px;
 					height: 2px;
 					background-color: #363636;
@@ -251,6 +293,7 @@ width: 1905px;
 						background-color: #3CBB9D;
 
 					}
+
 
 					.naw_sqre-center{
 						margin-left: 100px;
@@ -265,27 +308,38 @@ width: 1905px;
 						background-color: #3CBB9D;
 					}
 				.about_book__title{
-					display: none;
+/* 					display: none; */
+				.about_book__title{
+
 					margin-top: 26px;
 					font-size: 27px;
 					font-weight: bold;
 				}
 				.about_book__text{
+
 					display: none;
+
+
 					margin-top: 14px;
 					line-height: 30px;
 				}
 				.detail_info{
+
 					display: none;
+
 					margin-top: 45px;
 					font-weight: bold;
 				}
 				.detail_info__text{
+
 					display: none;
+
+
 					margin-top: 20px;
 					font-weight: lighter;
 					line-height: 35px;
 				}
+
 
 
 
@@ -332,3 +386,6 @@ width: 1905px;
 						height: 200px;
 
 					}
+
+		
+
