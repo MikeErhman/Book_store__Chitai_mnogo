@@ -1,6 +1,9 @@
 var about_book = document.getElementById("about_book-id");
+var about_book_div =document.getElementById("about_book_div")
 var quotes = document.getElementById("quotes-id");
+var quotes_div = document.getElementById("quotes_div")
 var notes = document.getElementById("notes-id");
+var notes_div = document.getElementById("notes_div")
 var book_description = document.getElementById("title_descript-id");
 var book_description_text = document.getElementById("text_descript-id");
 var naw_square = document.getElementById("naw_sqre-id")
@@ -20,7 +23,15 @@ var buttons = [about_book, quotes, notes]
 function define_button(button){
 	naw_square.classList.remove('"'+butt+'"')
 	button.classList.add("")
+}
 
+function toggle_divs(div){
+	switch(true){
+	case div.id == "quotes-id" : if(naw_square.className != "naw_sqre-center"){about_book_div,notes_div.classList = "inactive";
+	 quotes_div.classList = "quotes_book_div-active" }; break
+	case div.id == "notes-id" : if(naw_square.className != "naw_sqre-right"){}
+
+	}
 
 }
 
@@ -28,10 +39,10 @@ buttons.forEach(function(button){
 	button.addEventListener('click', function(){
 		console.log(button + " is click")
 		switch(true){
-			case button.id == "about_book-id" : if(naw_square.className != "naw_sqre") {
-				naw_square.className = "naw_sqre"};break
+			case button.id == "about_book-id" : if(naw_square.className != "about_book") {
+				naw_square.className = "naw_sqre-left"};break
 			case button.id == "quotes-id" : if(naw_square.className != "naw_sqre-center"){
-				naw_square.className = "naw_sqre-center"};break
+				toggle_divs(button); naw_square.className = "naw_sqre-center"; };break
 			case button.id == "notes-id" : if(naw_square.className != "naw_sqre-right"){
 				naw_square.className = "naw_sqre-right"};break
 			
