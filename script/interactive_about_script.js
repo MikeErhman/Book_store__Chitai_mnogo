@@ -25,30 +25,54 @@ function define_button(button){
 	button.classList.add("")
 }
 
-function toggle_divs(div){
-	switch(true){
-	case div.id == "quotes-id" : if(naw_square.className != "naw_sqre-center"){about_book_div,notes_div.classList = "inactive";
-	 quotes_div.classList = "quotes_book_div-active" }; break
-	case div.id == "notes-id" : if(naw_square.className != "naw_sqre-right"){}
 
-	}
 
-}
+
+
+
 
 buttons.forEach(function(button){
 	button.addEventListener('click', function(){
 		console.log(button + " is click")
 		switch(true){
-			case button.id == "about_book-id" : if(naw_square.className != "about_book") {
-				naw_square.className = "naw_sqre-left"};break
+			case button.id == "about_book-id" : if(naw_square.className != "naw_sqre-left") {
+				toggle_divs(button); 
+				naw_square.className = "naw_sqre-left"};
+				break
 			case button.id == "quotes-id" : if(naw_square.className != "naw_sqre-center"){
-				toggle_divs(button); naw_square.className = "naw_sqre-center"; };break
+				toggle_divs(button); 
+				naw_square.className = "naw_sqre-center"};
+				break
 			case button.id == "notes-id" : if(naw_square.className != "naw_sqre-right"){
-				naw_square.className = "naw_sqre-right"};break
+				toggle_divs(button);
+				naw_square.className = "naw_sqre-right"};
+				break
 			
 		}
 	})
+	function toggle_divs(div){
+		switch(true){
+			case div.id == "about_book-id" : if (naw_square.className != "naw_sqre-left"){ 
+				console.log("left");
+				notes_div.classList = "inactive";
+				quotes_div.classList = "inactive";
+				about_book_div.classList = "about_book-active"
+		};break
+			case div.id == "quotes-id" : if(naw_square.className != "naw_sqre-center"){
+				console.log("center");
+				about_book_div.classList = "inactive"; 
+				notes_div.classList = "inactive";
+				quotes_div.classList = "quotes_book_div-active" 
+		}; break
+			case div.id == "notes-id" : if(naw_square.className != "naw_sqre-right"){
+				console.log("right");
+				about_book_div.classList = "inactive"; 
+				quotes_div.classList = "inactive";
+				notes_div.classList = "notes_div"
+		}; break
 
+		}
+	}
 })
 
 // about_book.addEventListener("click", function(){
@@ -65,3 +89,4 @@ buttons.forEach(function(button){
 // 	naw_square.classList.remove();
 // 	naw_square.classList.add("naw_sqre-right");
 // })
+
