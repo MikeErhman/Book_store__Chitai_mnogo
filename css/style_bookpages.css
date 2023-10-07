@@ -254,9 +254,8 @@ html{
               .person{
                 margin-right: 15px;
               }
-            .notes_div p{
-              
-            }
+
+
             .notes_div_text{
             display: flex;
             flex-direction: column;
@@ -264,14 +263,77 @@ html{
             background-color: #363636;
             width: 930px;
             margin: 5px auto 20px auto;
-            height: 150px;
+            height: 290px;
             padding: 15px 20px 0 20px;
             font-size: 20px;
             }
-            .notes_div_text + .notes_div_text{
-              height: 270px;
+
+            .book_1123-p2{
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            background-color: #363636;
+            width: 930px;
+            margin: 5px auto 20px auto;
+            height: 280px;
+            padding: 15px 20px 0 20px;
+            font-size: 20px;
             }
-                        .notes_div_text + .notes_div_text + .notes_div_text{
+
+            .book_1123-p3{
+              display: flex;
+              flex-direction: column;
+              border-radius: 20px;
+              background-color: #363636;
+              width: 930px;
+              margin: 5px auto 20px auto;
+              height: 160px;
+              padding: 15px 20px 30px 20px;
+              font-size: 20px;
+            }
+
+            .book_1125-p1{
+              display: flex;
+              flex-direction: column;
+              border-radius: 20px;
+              background-color: #363636;
+              width: 930px;
+              margin: 5px auto 20px auto;
+              padding: 15px 20px 30px 20px;
+              font-size: 20px;
+              height: 300px;
+            }
+
+            .book_1125-p2{            
+              display: flex;
+              flex-direction: column;
+              border-radius: 20px;
+              background-color: #363636;
+              width: 930px;
+              margin: 5px auto 20px auto;
+              padding: 15px 20px 0 20px;
+              font-size: 20px;
+              height: 500px;
+            }
+
+            .book_1127-p2{
+              border-radius: 20px;
+              background-color: #363636;
+              width: 930px;
+              margin: 5px auto 20px auto;
+              height: 170px;
+/*            text-align: center;*/
+              padding: 30px 20px 0 20px;
+              font-size: 20px;
+            }
+
+ 
+
+
+ /*           .notes_div_text + .notes_div_text{
+              height: 270px;
+            }*/
+            .notes_div_text + .notes_div_text + .notes_div_text{
               height: 200px;
             }
     
