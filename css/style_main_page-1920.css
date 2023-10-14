@@ -1,0 +1,24 @@
+@media(max-width:1800px){
+
+	.wrapper{
+	position: relative;
+/*	height: 2000px;*/
+	height: 100vh;
+	width: 100vw;
+	background-color: #363636;
+
+}
+
+.menu {
+	z-index: 12;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 1.8vw;
+	width: 100%;
+	text-align: center;
+	padding: 0 auto 0 auto; 
+	position: absolute;
+	bottom: 1vh;
+
+		    }
+
+}
