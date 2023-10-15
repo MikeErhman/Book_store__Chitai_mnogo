@@ -1,8 +1,7 @@
-@media(max-width:1800px){
+@media(max-width:1900px){
 
 	.wrapper{
 	position: relative;
-/*	height: 2000px;*/
 	height: 100vh;
 	width: 100vw;
 	background-color: #363636;
