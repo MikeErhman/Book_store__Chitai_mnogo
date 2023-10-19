@@ -46,7 +46,7 @@ html{
       .container .menu_and_search .text {
         font-family: 'Ubuntu', sans-serif;
         width: 60vw;
-        height: 7vh;
+        height: 3.4vw;
         border: none;
         border-radius: 0.6vw; 
       }
@@ -64,7 +64,7 @@ html{
          display: flex;
          background-color: #3CBB9D;
          margin-left: 1.5vw;
-         height: 7vh;
+         height: 3.4vw;
          width: 6.6vw;
          border: none;
          border-radius: 0.6vw; 
@@ -137,12 +137,13 @@ html{
             flex-direction: column;
           }
 
-            .book_of_day__title_and_price{
+            .book__title_and_price{
               display: flex;
               flex-direction: row;
-              border-radius: 0.6vw;
+              border-radius: 0.6vw 0.6vw 0 0;
               background-color: #626161;
-              height: 150%;
+              height: 53vw;
+              width: 89vw;
             }
               .book_of_day__img{
                 height: 47vw;
@@ -332,3 +333,172 @@ html{
                   .final_price_num{
                     margin: 0.2vw 0 0 24.4vw;
                   }
+
+
+
+
+/*         ############################################         */
+
+
+
+
+        .book_description_and_quotes{
+        position: relative;
+        width: 89vw;
+        height: 55vw;
+        color: white;
+        font-size: 1.2vw;
+        font-family: 'Ubuntu', sans-serif;  
+        background-color: #626161;
+
+      }
+        .description_naw{
+          display: flex;
+          padding-top: 1vw;
+        }
+          .description_naw p{
+            height: 2.5vw;
+            margin: 0 0.6vw 0 0.6vw;
+          }
+        .vert_line_naw{
+          width: 75.45vw;
+          height: 0.2vw;
+          background-color: #363636;
+        }
+          .naw_sqre-left{
+            height: 0.5vw;
+            width: 6vw;
+            background-color: #3CBB9D;
+
+          }
+          .naw_sqre-center{
+            margin-left: 5.4vw;
+            height: 0.5vw;
+            width: 6vw;
+            background-color: #3CBB9D;
+          }
+          .naw_sqre-right{
+            margin-left: 11.2vw;
+            height: 0.5vw;
+            width: 6vw;
+            background-color: #3CBB9D;
+          }
+
+        .about_description{
+          margin: 0 0 0 5vw;
+        }
+
+
+        .inactive{
+          display: none;
+        }
+        .about_book-active{
+          width: 70vw;
+          height: 50vw;
+        }
+        .about_book__title{
+          margin-top: 1.5vw;
+          font-size: 1.6vw;
+          font-weight: bold;
+        }
+        .about_book__text{
+          margin-top: 1vw;
+          line-height: 1.5vw;
+        }
+        .detail_info{
+          margin-top: 4vw;
+          font-weight: bold;
+        }
+        .detail_info__text{
+          margin-top: 1vw;
+          font-weight: lighter;
+          line-height: 1.5vw;
+        }
+
+
+        
+
+
+        .quotes_book_div-active{
+          width: 67vw;
+          height: 44vw;
+          margin-top: 3vw;
+          background-color: #ADADAD;
+          display: flex;
+          flex-direction: column;
+          border-radius: 0.6vw; 
+
+        }
+          .name_div{
+            margin-top: 3vw;
+            margin-left: 7vw;
+          }
+          .qoutes_book__text{
+            font-family: inter; 
+            border-radius: 2vw;
+            background-color: #363636;
+            width: 50vw;
+            margin: 0.3vw auto 1vw auto;
+            height: 7vw;
+            padding: 2vw 1vw 0 1vw;
+            font-size: 1.1vw;
+          }
+            .qoutes_book__text::before{
+              content: "“";     /* Левая кавычка */
+              font-size: 4vw;     /* Размер текста кавычек */
+              color: #3CBB9D;   /* Цвет кавычек */
+              line-height: 0vw;     /* Текст не занимает место */
+             }
+          .qoutes_book__text + .qoutes_book__text{
+            height: 14vw;
+          }
+
+          .qoutes_book__text + .qoutes_book__text + .qoutes_book__text{
+            height: 13vw;
+
+          }
+
+
+
+          .notes_div{
+            width: 67vw;
+            height: 44vw;
+            margin-top: 3vw;
+            background-color: #ADADAD;
+            display: flex;
+            flex-direction: column;
+            border-radius: 0.6vw;
+
+          } 
+
+            .person_and_score{
+              margin-bottom: 0.5vw;
+            }
+              .score{
+                margin-bottom: 1vw;
+              }
+              .person{
+                margin-right: 1vw;
+
+              }
+            .notes_div p{
+              
+            }
+            .notes_div_text{
+              display: flex;
+              flex-direction: column;
+              border-radius: 2vw;
+              background-color: #363636;
+              width: 50vw;
+              margin: 1vw 0 0 8.3vw;
+              height: 9vw;
+              padding: 1vw;
+              font-size: 1.1vw;
+            }
+            .notes_div_text + .notes_div_text{
+              height: 16vw;
+            }
+            .notes_div_text + .notes_div_text + .notes_div_text{
+              height: 11vw;
+            }
+

@@ -1,0 +1,9 @@
+.qoutes_book__text{
+	height: 5vw;
+}
+
+.qoutes_book__text + 
+.qoutes_book__text +
+.qoutes_book__text{
+	height: 9vw;
+}
