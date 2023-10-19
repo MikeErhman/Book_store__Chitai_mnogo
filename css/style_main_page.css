@@ -1,0 +1,389 @@
+html{
+    box-sizing: border-box;
+    background-color:#363636;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+ 
+
+
+.wrapper{
+	position: relative;
+	height: 100vh;
+	width: 99vw;
+	background-color: #363636;
+
+}
+	.container{
+		position: absolute;
+		left: 5%;
+		border-radius: 1vw 1vw 0 0;
+		width: 90%;
+		height: 150%;
+		background-color: #363636;
+
+	}
+		.menu_and_slider{
+			width: 100%;
+			height: 30vh;
+		}
+
+
+			.slider{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				border-radius: 0 0 1vw 1vw;
+			}
+
+		       .swiper{
+		          width:100%;
+		          height: 100%;
+		          border-radius: 1vw;
+		        }
+		        	.shadow{
+			          position: absolute;
+			          width: 100%;
+			          overflow: hidden;
+			          height:100%;
+			          background-color: rgba(0, 0, 0, .6);
+			          z-index: 11;
+			          border-radius: 1vw;
+			        }
+					.swiper-wrapper{
+			          width:100%;
+			          border-radius: 1vw;
+			        }
+		  				#swiper_1{
+					        object-fit:cover;
+				            display:block;
+				            height:100%;
+				            width: 102%;
+			        	}
+			        	#swiper_2{
+				            object-fit:cover;      
+				            display:block;
+				            height:100%;
+				            width: 100%;
+			        	}
+			.menu {
+		       z-index: 12;
+		       background-color: rgba(0, 0, 0, 0);
+		       font-size: 1.8vw;
+		       width: 100%;
+		       text-align: center;
+		       padding: 0 auto 0 auto; 
+		       position: absolute;
+		       bottom: 1vh;
+
+		    }
+		    	.menu a {
+		          font-family: 'Ubuntu', sans-serif;
+		          margin: 0 10% 0 10%;
+		          text-decoration: none;
+		          outline: none;
+		          color: white; 
+		      	}
+
+			.logo_search_buttons{
+				width: 100%;
+				height: 4.5vw;
+				background-color: #363636;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			}
+				.logo {
+			        font-size: 1.5vw;
+			        margin: 0 5vw 0 1.5vw;
+			        color: #3CBB9D;
+			        
+			    }
+			    	.logo a{
+			    		text-decoration: none; 
+			    		color: #3CBB9D;
+			    	}
+
+			    .text {
+			        font-family: 'Ubuntu', sans-serif;
+			        width: 60vw;
+			        height: 7vh;
+			        border: none;
+			        border-radius: 0.6vw; 
+			    }
+
+				    input::placeholder{
+				        color:rgba(0, 0, 0, .3);
+				        padding: 1vh;
+				        padding-left: 3vw;
+				        font-size: 1.2vw;
+				        font-family: 'Ubuntu', sans-serif;
+				        height: 2vh;
+				    }
+				.search_btn {
+			       display: flex;
+			       background-color: #3CBB9D;
+			       margin-left: 1.5vw;
+			       height: 7vh;
+			       width: 6.6vw;
+			       border: none;
+			       border-radius: 0.6vw; 
+			       color: white;
+			       align-items: center;
+			       padding: 1vw;
+			       font-size: 1.2vw; 
+			   	}
+			   		.search_btn_text{
+			   			text-decoration: none;
+			   		}
+
+			   		.srch__icon{
+				        width: 1.5vw;
+				        margin-left: 0.2vw;  	
+				    }
+
+
+				.login {
+			        margin-left: 1.2vw;
+			        display: flex;
+			        flex-direction: row;
+			        color: white;
+			        justify-items: space-between;
+			        align-items:center; 
+			    }
+			    	.login__btn{
+			    		width: 3vw;
+			    	}
+
+			    	.login .login__text {
+				          font-family: 'Ubuntu', sans-serif;
+				          margin-left: 1vw;
+				          font-size: 1vw;
+				    }
+				.menu_book {
+			       	margin-left: 1.5vw;
+			       	margin-right: 1vw;
+			        display: flex;
+			        flex-direction: row;
+			        color: white;
+			    }
+			    	.menu_book__btn{
+			    		width: 3vw;
+			    	}
+
+				    .menu_book .menu_book__text {
+				        font-family: 'Ubuntu', sans-serif;
+				        width: 5vw; 
+				        margin-left: 1vw;  
+				        margin-top: 1vh;
+				        font-size: 1vw;
+				    }
+
+
+
+
+
+
+		.books{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: #626161;
+			border-radius: 1vw ;
+		}
+
+
+
+
+			.books__day_book{
+				margin-top: 3vh;
+		        display: flex;
+		        flex-direction: column;
+		        position: absolute;
+		        margin-left: 4vw;
+		        height: 80vh;
+		        width: 30vw;
+			}
+			.books__day_book-title{
+            	color: white;
+            	text-align: center;
+            	font-size: 2vw;
+            	font-family: 'Ubuntu', sans-serif;
+
+          	}
+          	.books__day_book-div{
+          		margin-top: 2vw;
+				position: relative;
+				height: 100%;
+				width: 32vw;
+          	}
+          	.books__day_book-div .shadow{
+              display: flex;
+              position: absolute;
+              top: 42.2vw;
+              right: 0;
+              width: 100%;
+              font-family: 'Ubuntu', sans-serif;
+              height:10%;
+              background-color: rgba(0, 0, 0, .7);
+              z-index: 8;
+              border-radius: 0;
+              color: white;
+              align-items:center;
+              padding: 1vh;
+              text-decoration: none;
+              padding: 1vw;
+          }
+
+          	.price_place{
+				display: flex;
+				color: white;
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 1vw;
+				position: absolute;
+	            top: 1.5vh;
+	            right: 1.5vw;
+	            height: 4vh;
+	            width: 4vw;
+	            background-color: #3CBB9D;
+	            z-index: 8; 
+	            border-radius: 0 0.5vw 0.5vw 0;
+	            text-align: center;
+	            align-items: center;
+	            padding-left: 0.5vw;
+
+				            }
+
+          .books__day_book-div a{
+              text-decoration: none;
+              color: white;
+            }
+          		.books__day_book-img{
+           			width: 100%;
+          		}
+          	.day_book__title{
+          		position: absolute;
+	            color: white;
+	            text-align: center;
+	            font-size: 2vw;
+	            font-family: 'Ubuntu', sans-serif;
+	            top: 51.5vw;
+	            left: 7vw;
+          	}
+
+
+
+
+
+            .books .books__sales_of_day{
+		        margin-top: 3vh;
+		        position: absolute;
+		        right: 0;
+		        margin-right: 3vw;
+		        display: flex;
+		        flex-direction: column;
+
+	      	}
+		        .sale_of_day__div{
+		          margin-top: 4vh;
+		          position: relative;
+		          right: 0;
+		        }
+
+
+
+		            .sale_of_day__title{
+				          display: grid;
+				          text-align: center;
+				          color: white;
+				          font-size: 2vw;
+				          font-family: 'Ubuntu', sans-serif;
+				        }
+
+				          .sale_of_day__imgs{
+				            position: relative;
+				            display: grid;
+				            gap:2.5vw;
+				            margin-right: 1.5vw;
+				            grid-template-columns: 1fr 1fr 1fr;
+				          }
+
+					       .sale_of_day__imgs .sale_of_day__img{
+					          width: 13.5vw;
+					          height: 20vw;
+					          margin-bottom: 0.6vh;
+					       }				          
+
+				            .sale_of_day__div .price_place__sale{
+				              	display: flex;
+					            color: white;
+					            font-family: 'Ubuntu', sans-serif;
+					            font-size: 1vw;
+					            position: absolute;
+								top: 1.5vh;
+					            right: 0.5vw;
+					            height: 4vh;
+					            width: 7.5vw;
+					            background-color: rgba(0, 0, 0, .7);
+					            z-index: 8;
+					            border-radius: 1vw;
+					            text-decoration: line-through;
+					            text-align: center;
+					            align-items: center;
+					            padding-left: 1vw;
+				            }
+
+				            .sale_of_day__div .price_place{
+				              	display: flex;
+					            color: white;
+					            font-family: 'Ubuntu', sans-serif;
+					            font-size: 1vw;
+					            position: absolute;
+					            top: 1.5vh;
+					            right: 0.5vw;
+					            height: 4vh;
+					            width: 4vw;
+					            background-color: #3CBB9D;
+					            z-index: 8; 
+					            border-radius: 0 0.5vw 0.5vw 0;
+					            text-align: center;
+					            align-items: center;
+					            padding-left: 1vw;
+				            }
+					          .sale_of_day__imgs .sale_of_day__div .shadow{
+					              display: flex;
+					              position: absolute;
+					              bottom: 1vh;
+					              width: 100%;
+					              height:20%;
+					              background-color: rgba(0, 0, 0, .6);
+					              z-index: 11;
+					              border-radius: 0;
+					              color: white;
+					              font-family: 'Ubuntu', sans-serif;
+					              font-size: 0.9vw;
+					              align-items: center;
+					              padding: 1vw;
+					          }
+
+						      .sale_of_day__imgs .sale_of_day__div .shadow a{
+						            text-decoration: none;
+						            color: white;
+						          }
+
+								.more_sales{
+							        width:30vw;
+							        height: 8vh;
+							        margin: 2vh auto 1vh auto;
+							        border-radius: 0.6vw;
+							        background-color: #3CBB9D;
+							        border:none;
+							        color: white;
+							        font-family: 'Ubuntu', sans-serif;
+							        font-size: 1.7vw;
+							        }
+
