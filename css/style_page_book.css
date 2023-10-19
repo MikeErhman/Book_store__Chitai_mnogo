@@ -1,0 +1,331 @@
+html{
+    box-sizing: border-box;
+    background-color:#363636;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+  height: 100vh;
+  width: 99vw;
+  background-color: #363636;
+
+}
+  .container{
+    border-radius: 0.6vw 0.6vw 0 0;
+    width: 90%;
+    height: 150%;
+/*    background-color: #626161;*/
+    margin: auto;
+
+  }
+
+
+
+    .container .menu_and_search {
+        width: 90vw;
+        height: 5vw;
+        background-color: #363636;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      .logo {
+        font-size: 1.5vw;
+        margin: 0 5vw 0 1.5vw;
+        color: #3CBB9D;  
+          }
+        .logo a{
+          text-decoration: none; 
+          color: #3CBB9D;
+        }
+      .container .menu_and_search .text {
+        font-family: 'Ubuntu', sans-serif;
+        width: 60vw;
+        height: 7vh;
+        border: none;
+        border-radius: 0.6vw; 
+      }
+
+        .text::placeholder{
+          color:rgba(0, 0, 0, .3);
+          padding: 1vh;
+          padding-left: 3vw;
+          font-size: 1.2vw;
+          font-family: 'Ubuntu', sans-serif;
+          height: 2vh;
+        }
+
+      .container .menu_and_search .search_btn {
+         display: flex;
+         background-color: #3CBB9D;
+         margin-left: 1.5vw;
+         height: 7vh;
+         width: 6.6vw;
+         border: none;
+         border-radius: 0.6vw; 
+         color: white;
+         align-items: center;
+         padding: 1vw;
+         font-size: 1.2vw; 
+      }
+        .search_btn_text{
+          text-decoration: none;
+        }
+        .srch__icon{
+          width: 1.3vw;
+          height: 1.3vw;
+          margin-left: 0.2vw;   
+        }
+
+        .container .menu_and_search .login {
+          margin-left: 1.2vw;
+          display: flex;
+          flex-direction: row;
+          color: white;
+          justify-items: space-between;
+          align-items:center; 
+        }
+          .login__btn{
+            width: 3vw;
+          }
+
+          .login .login__text {
+            font-family: 'Ubuntu', sans-serif;
+            margin-left: 1vw;
+            font-size: 1vw;
+          }
+
+          .login .login__text {
+            font-family: 'Ubuntu', sans-serif;
+            margin-left: 0.7vw
+          }
+
+        .container .menu_and_search .menu_book {
+          margin-left: 1.5vw;
+          margin-right: 1vw;
+          display: flex;
+          flex-direction: row;
+          color: white;
+        }
+          .menu_book__btn{
+              width: 3vw;
+            }
+          .menu_book .menu_book__text {
+            font-family: 'Ubuntu', sans-serif;
+            width: 5vw; 
+            margin-left: 1vw;  
+            margin-top: 1vh;
+            font-size: 1vw;
+          }
+
+
+
+
+
+/*        ####################################################################          */
+
+
+
+
+          .book_page{
+            display: flex;
+            flex-direction: column;
+          }
+
+            .book_of_day__title_and_price{
+              display: flex;
+              flex-direction: row;
+              border-radius: 0.6vw;
+              background-color: #626161;
+              height: 150%;
+            }
+              .book_of_day__img{
+                height: 47vw;
+                width: 44vw;
+                margin: 2vw 0 0 3vw;
+              }
+
+              .title{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 47vw;
+                color: white;
+                font-size: 1.4vw;
+                font-family: 'Ubuntu', sans-serif;
+/*                    position: relative;*/
+              }
+                .title_of_book{
+                  margin: 3vw 0 0 2vw;
+                  font-weight: bold;
+                  font-size: 2.5vw;
+                }
+                .title_of_book-bookday{
+                  margin: 2.2vw 0 1vw 3.4vw;
+                  font-weight: bold;
+                  font-size: 2.2vw;
+                }
+                .first_desc_of_book{
+                  margin: 0 0 0 3vw;
+                  width: 40vw;
+                  height: 12vw;
+                  min-height: 5vw;
+                }
+                .author{
+                  margin: 2vw 0 0 3vw;
+
+                }
+              .stars_and_buy{
+                display: flex;
+                flex-direction: row;
+                height: 7vw;
+                width: 36vw;
+                margin: 3vw 0 0 3vw;               
+              }
+              .grades_left{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 5.2vw;
+              }
+              .grades_right{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                width: 5.2vw;
+              }
+                .grades{
+                  position: relative;
+                  display: flex;
+                  flex-direction: row;
+                  height: 4vw;
+                  background-color: #363636;
+                  width: 11.3vw;
+                  border-radius: 0.6vw;
+                }
+                  .stars{
+                    margin: 0.4vw 0 0 0.4vw;
+                    height: 2vw;
+                    height: 1.4vw;
+                  }
+                  .stars_sum{
+                    margin: 0.3vw 0 0 0.3vw;
+                    font-size: 1.2vw;
+                    color: #3CBB9D;
+                  }
+                  .sum{
+                    margin: 0 0 0 1vw;
+                    font-size: 1.1vw;
+                  }
+                  .grades .vert_line{
+                    background-color: #515151;
+                    height: 3vw;
+                    width: 0.15vw;
+                    margin: 0.5vw 0 0 0;
+                  }
+                  .notes{
+                    width: 1.3vw;
+                    height: 1.3vw;
+                    margin: 0.5vw 0 0 0.6vw;
+                  }
+                  .notes_sum{
+                    font-size: 1.2vw;
+                    margin: 0.4vw 0 0 0.4vw
+                  }
+                  .notes_text{
+                    font-size: 1.1vw;
+                    margin: 0 0 0 1vw;
+                  }
+
+              .buy_and_like{
+                display: flex;
+                flex-direction: row;
+                margin: 0 0 0 12vw;
+                background-color: #3CBB9D;
+                width: 13.5vw;
+                height: 3.9vw;
+                border-radius: 0.6vw;
+              }
+                .favorite{
+                  margin: 0.8vw 0 0 0;
+                  width: 3.2vw;
+                  height: 2vw;
+                }
+                .favorite_text{
+                  margin: 1.1vw 0 0 0;
+                  font-size: 1.22vw;
+                }
+                .buy_and_like .vert_line{
+                  margin: 0.5vw 0 0 0.3vw;
+                  width: 0.14vw;
+                  height: 3vw;
+                  background-color: white;
+                }
+                .shopping_cart{
+                  margin: auto;
+                  width: 2vw;
+                  height: 2.2vw;
+                }
+              .buy_form{
+                display: flex;
+                flex-direction: column;
+                background-color: #363636;
+                width: 36vw;
+                height: 27vw;
+                margin: 2vw 0 0 3vw;
+                border-radius: 0.6vw;
+                font-size: 1.2vw;
+                font-weight: bold;
+              }
+                .btn_buy{
+                  margin: 1vw 0 0 4.4vw;
+                  padding-top: 0.7vw;
+                  width: 27vw;
+                  height: 3vw;
+                  background-color: #3CBB9D;
+                  border-radius: 0.6vw;
+                  text-align: center;
+
+                }
+                .table_prices{
+/*                  position: absolute;*/
+/*                  top: 100px;*/
+                }
+                table{
+                  padding: 1vw 1vw 0 1vw;
+                  line-height: 2.2vw;
+                }
+                th{
+                  font-weight: lighter;
+                }
+                  .th_price_book{
+                    width: 142vw;
+                    margin: 0 10vw 0 2vw;
+                    text-align: left;
+                  }
+                  .th_sum{
+                    margin: 0 0 0 5vw;
+                    width: 30vw;
+                  }
+                  
+                .horLine{
+                  width: 30vw;
+                  height: 0.2vw;
+                  background-color: #515151;
+                  margin: 0 0 0 3vw;
+                }
+                .final_price{
+                  display: flex;
+                  flex-direction: row;
+                }
+                  .final_price_text{
+                    margin: 0.2vw 0 0 1.2vw;
+                  }
+                  .final_price_num{
+                    margin: 0.2vw 0 0 24.4vw;
+                  }
