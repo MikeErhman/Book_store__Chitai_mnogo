@@ -53,11 +53,11 @@ html{
 
         .text::placeholder{
           color:rgba(0, 0, 0, .3);
-          padding: 1vh;
+          padding: auto;
           padding-left: 3vw;
           font-size: 1.2vw;
           font-family: 'Ubuntu', sans-serif;
-          height: 2vh;
+          height: 2vw;
         }
 
       .container .menu_and_search .search_btn {
@@ -293,24 +293,27 @@ html{
 
                 }
                 .table_prices{
-/*                  position: absolute;*/
-/*                  top: 100px;*/
+                  width: 36vw;
+                  height: 10vw;
                 }
                 table{
                   padding: 1vw 1vw 0 1vw;
                   line-height: 2.2vw;
+                  height: 8vw;
                 }
                 th{
                   font-weight: lighter;
                 }
                   .th_price_book{
-                    width: 142vw;
+                    width: 76%;
                     margin: 0 10vw 0 2vw;
                     text-align: left;
+                    height: 1vw;
                   }
                   .th_sum{
                     margin: 0 0 0 5vw;
                     width: 30vw;
+                    height: 1vw;
                   }
                   
                 .horLine{
