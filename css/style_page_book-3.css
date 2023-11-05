@@ -1,9 +1,9 @@
 .qoutes_book__text{
-	height: 5vw;
+	height: 7vw;
 }
 
 .qoutes_book__text + .qoutes_book__text{
-	height: 15vw;
+	height: 11vw;
 }
 
 .qoutes_book__text + 
@@ -20,12 +20,12 @@
 	background-color: #363636;
 	width: 50vw;
 	margin: 1vw 0 0 8.3vw;
-	height: 9vw;
+	height: 8vw;
 	padding: 1vw;
 	font-size: 1.1vw;
   }
   .notes_div_text + .notes_div_text{
-	height: 13vw;
+	height: 15vw;
   }
   .notes_div_text + .notes_div_text + .notes_div_text{
 	height: 9vw;
