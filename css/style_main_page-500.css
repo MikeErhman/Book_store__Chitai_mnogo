@@ -44,6 +44,18 @@ html{
                     width: 100%;
                     height: 100%;
                 }
+                    #swiper_1-500{
+                        object-fit:cover;
+                        display:block;
+                        height:100%;
+                        width: 102%;
+                    }
+                    #swiper_2-500{
+                        object-fit:cover;      
+                        display:block;
+                        height:100%;
+                        width: 100%;
+                    }
 
     .container-500{
             width: 450px;
