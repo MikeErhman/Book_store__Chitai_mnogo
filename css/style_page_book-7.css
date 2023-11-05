@@ -1,0 +1,25 @@
+.qoutes_book__text{
+	height: 8vw;
+}
+
+.qoutes_book__text + .qoutes_book__text{
+	height: 12vw;
+}
+
+.qoutes_book__text + 
+.qoutes_book__text +
+.qoutes_book__text{
+	height: 9vw;
+}
+
+.notes_div_text{
+    height: 12vw;
+}
+
+.notes_div_text + .notes_div_text{
+    height: 13vw;
+}
+
+.notes_div_text + .notes_div_text + .notes_div_text{
+	height: 10vw;
+}

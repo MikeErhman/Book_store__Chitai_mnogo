@@ -476,9 +476,11 @@ html{
             }
               .score{
                 margin-bottom: 1vw;
+                width: 1.3vw;
               }
               .person{
                 margin-right: 1vw;
+                width: 2.5vw;
 
               }
             

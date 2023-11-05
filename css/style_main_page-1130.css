@@ -1,0 +1,19 @@
+  @media(max-width:1600px){
+    .books__day_book{
+        margin-top: 0.6vw;
+    }
+ }
+ @media(max-width:1000){
+    
+ }
+ @media(max-width:1130px){
+    .books__day_book{
+        margin-top: 1.6vw;
+    }
+ }
+ @media(max-width:800px){
+    .books__day_book{
+        margin-top: 4vw;
+    }
+ }
+

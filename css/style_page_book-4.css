@@ -1,0 +1,20 @@
+
+.qoutes_book__text + 
+.qoutes_book__text +
+.qoutes_book__text{
+    height: 8vw;
+}
+
+.qoutes_book__text +
+.qoutes_book__text{
+    height: 12vw;
+}
+
+
+.notes_div_text + .notes_div_text{
+	height: 12vw;
+  }
+
+.notes_div_text + .notes_div_text + .notes_div_text{
+    height: 9vw;
+    }
