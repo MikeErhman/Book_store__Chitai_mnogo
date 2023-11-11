@@ -40,7 +40,7 @@ html{
 				border-radius: 0 0 1vw 1vw;
 			}
 
-		       .swiper{
+		       .slider .swiper{
 		          width:100%;
 		          height: 100%;
 		          border-radius: 1vw;
@@ -176,11 +176,10 @@ html{
 			    		width: 3vw;
 			    	}
 
-				    .menu_book .menu_book__text {
+				    .menu_book__text {
 				        font-family: 'Ubuntu', sans-serif;
 				        width: 5vw; 
 				        margin-left: 1vw;  
-				        margin-top: 1vh;
 				        font-size: 1vw;
 				    }
 
@@ -278,8 +277,8 @@ html{
 
 
 
-            .books .books__sales_of_day{
-		        /* margin-top: 3vw; */
+            .books__sales_of_day{
+		        margin-top: 3vw;
 		        position: absolute;
 		        right: 0;
 		        margin-right: 3vw;
