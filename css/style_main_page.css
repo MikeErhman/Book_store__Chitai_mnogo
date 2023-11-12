@@ -8,22 +8,33 @@ html{
     margin: 0;
     padding: 0;
 }
- 
+
+
+
+.wrapper-500{
+	display: none;
+}
+
+@media(max-width:500px) {
+
+}
 
 
 .wrapper{
+	display: block;
 	position: relative;
-	height: 100vh;
+	height: 102vw;
 	width: 99vw;
 	background-color: #363636;
 
 }
 	.container{
+		display: block;
 		position: absolute;
 		left: 5%;
 		border-radius: 1vw 1vw 0 0;
 		width: 90%;
-		height: 150%;
+		height: 70vw;
 		background-color: #363636;
 
 	}
@@ -385,3 +396,8 @@ html{
 							        font-size: 1.7vw;
 							        }
 
+								
+
+								
+									
+									
