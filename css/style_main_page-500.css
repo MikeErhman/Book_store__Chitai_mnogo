@@ -99,7 +99,7 @@
                 .logo{
                     /* text-align: center; */
                     font-size: 2.8vw;
-			        margin: 10px 10px 10px 10px;
+			        margin: 1vw;
 			        color: #3CBB9D;
                 }
                     .logo a{
@@ -116,12 +116,12 @@
 			        align-items:center; 
                 }
                     .login__btn{
-                        width: 35px;
+                        width: 6vw;
                     }    
                     .login .login__text{
                         font-family: 'Ubuntu', sans-serif;
                         margin-left: 4px;   
-                        font-size: 10px;
+                        font-size: 2vw;
                     }
 
                 .menu_book {
@@ -132,7 +132,7 @@
                     color: white;
                 }
                     .menu_book__btn{
-                        width: 35px;
+                        width: 6vw;
                     }
     
                     .menu_book__text {
@@ -140,11 +140,11 @@
                         width: 35px; 
                         margin-left: 4px;  
                         margin-top: 5px;
-                        font-size: 10px;
+                        font-size: 2vw;
                     }
                     .text {
                         font-family: 'Ubuntu', sans-serif;
-                        width: 100px;
+                        width: 21vw;
                         height: 30px;
                         border: none;
                         border-radius: 0.6vw; 
@@ -156,7 +156,7 @@
                         background-color: #3CBB9D;
                         margin-left: 4px;
                         height: 30px;
-                        width: 30px;
+                        width: 7vw;
                         border: none;
                         border-radius: 0.6vw;
                         color: white;
