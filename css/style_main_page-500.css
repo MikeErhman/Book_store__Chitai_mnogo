@@ -21,7 +21,7 @@
 .wrapper-500{
     display: block;
     background-color: #363636;  
-    width: 500px;
+    width: 100vw;
     height: 1000px;
     position: relative;
 }
@@ -226,7 +226,7 @@
                     .sale_of_day__div{
                         margin-top: 20px;
                         /* position: relative; */
-                        right: 0;
+                        right: 1vw;
                         width: 36vw;
                     }
                         .sale_of_day__div .shadow a{
