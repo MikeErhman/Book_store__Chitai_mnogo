@@ -169,10 +169,10 @@
                         }
                         .srch_btn .srch__icon{
                             position: absolute;
-                            height: 20px;
-                            width: 20px;
-                            left: 5px;
-                            top: 5px;
+                            height: 5vw;
+                            width: 4vw;
+                            left: 1vw;
+                            top: 1vw;
                         }
 
 
@@ -219,7 +219,7 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                 gap:40px; 
+                 gap:7vw; 
                 margin-right: 1.5vw;
                 /* grid-template-columns: 1fr 1fr 1fr; */
             } 
