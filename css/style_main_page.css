@@ -30,6 +30,9 @@ html{
 	background-color: #363636;
 
 }
+.sandwich_wrapper{
+	display: none;
+}
 	.container{
 		display: block;
 		position: absolute;

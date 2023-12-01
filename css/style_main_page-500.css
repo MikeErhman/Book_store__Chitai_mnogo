@@ -86,16 +86,46 @@
                 .sandwich{
                     height: 100%;                    
                     width: 10vw;
-                    /* background-color: #fff; */
                     display: flex; 
                     flex-direction: column;
                 }
                     .sandvich_line{
-                        height: 5px;
+                        height: 20px;
                         width: 90%;
                         background-color: #3CBB9D;
                         margin: 5px 0 4px 0;
                     }
+
+                   .menu_and_slider .sandwich_inactive{
+                        display: none;
+                    }
+
+                    .menu_and_slider .sandwich_wrapper{
+                        display: block;
+                        background-color: rgba(54, 54, 54, 0.8);
+                         height: 100%;
+                         width: 100%;
+                         position: absolute;
+                         z-index: 2;
+                         height: 30%;
+                     }   
+                     .sandwich_menu{
+                         color: white;
+                         font-size: 4vw;
+                         padding: 9vw 5vw;
+                         list-style: none;
+                         text-decoration: none;
+                     }
+                     .sandwich_menu li{
+                         margin: 6vw 0 6vw 3vw ;
+                         font-family: 'Ubuntu', sans-serif;
+                         
+                     }
+             
+                     .sandwich_menu li a{
+                         text-decoration: none;
+                         color: inherit;
+                     }
                 .logo{
                     /* text-align: center; */
                     font-size: 2.8vw;
@@ -152,7 +182,6 @@
                     }
                     .srch_btn {
                         position: relative;
-                        /* display: flex; */
                         background-color: #3CBB9D;
                         margin-left: 4px;
                         height: 30px;
