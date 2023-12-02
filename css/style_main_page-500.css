@@ -270,7 +270,7 @@
                         top: 1.2vw;
                         right: 0.5vw;
                         height: 30px;
-                        width: 60px;
+                        width: 18vw;
                         background-color: rgba(0, 0, 0, .7);
                         z-index: 8;
                         border-radius: 10px;
@@ -284,12 +284,12 @@
                         display: flex;
                         color: white;
                         font-family: 'Ubuntu', sans-serif;
-                        font-size: 11px;
+                        font-size: 2.7vw;
                         position: absolute;
                         top: 1.2vw;
                         right: 0.5vw;
                         height: 30px;
-                        width: 30px;
+                        width: 9vw;
                         background-color: #3CBB9D;
                         z-index: 8;
                         border-radius: 0 10px 10px 0;
