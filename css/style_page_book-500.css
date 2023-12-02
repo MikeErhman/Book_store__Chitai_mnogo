@@ -135,7 +135,7 @@
                     .logo{
                         /* text-align: center; */
                         font-size: 2.8vw;
-                        margin: 1vw;
+                        margin: 3vw 6vw auto 3vw;
                         color: #3CBB9D;
                     }
                         .logo a{
@@ -219,7 +219,7 @@
                 top: 300px;
                 left: 4.7vw;
                 width: 90vw;
-                height: 70%;
+                height: 100%;
                 background-color: #626161;
                 /* margin: 0 auto ; */
         }
@@ -307,14 +307,15 @@
                 }
                   .description_naw p{
                     height: 2.5vw;
-                    margin: 0 5.6vw 0 4.6vw;
+                    margin: 0px 9.6vw 0 4.6vw;
+                    font-size: 4.2vw;
                   }
                   
                 .vert_line_naw{
                     width: 90.45vw;
                     height: 0.5vw;
                     background-color: #363636;
-                    margin-top: 7vw;
+                    margin-top: 5vw;
                 }
                   .naw_sqre-left{
                     height: 1.5vw;
@@ -371,8 +372,8 @@
                 
 
         .quotes_book_div-active{
-            width: 67vw;
-            height: 44vw;
+            width: 80vw;
+            height: 152vw;
             margin-top: 3vw;
             background-color: #ADADAD;
             display: flex;
@@ -388,11 +389,11 @@
               font-family: inter; 
               border-radius: 2vw;
               background-color: #363636;
-              width: 50vw;
+              width: 76vw;
               margin: 0.3vw auto 1vw auto;
-              height: 7vw;
+              height: 40vw;
               padding: 2vw 1vw 0 1vw;
-              font-size: 1.1vw;
+              font-size: 3.6vw;
             }
               .qoutes_book__text::before{
                 content: "“";     /* Левая кавычка */
@@ -401,24 +402,24 @@
                 line-height: 0vw;     /* Текст не занимает место */
                }
             .qoutes_book__text + .qoutes_book__text{
-              height: 14vw;
+                height: 50vw;
             }
   
             .qoutes_book__text + .qoutes_book__text + .qoutes_book__text{
-              height: 13vw;
+              height: 45vw;
   
             }
   
   
   
             .notes_div{
-              width: 67vw;
-              height: 44vw;
-              margin-top: 3vw;
-              background-color: #ADADAD;
-              display: flex;
-              flex-direction: column;
-              border-radius: 0.6vw;
+                width: 80vw;
+                height: 170vw;
+                margin-top: 3vw;
+                background-color: #ADADAD;
+                display: flex;
+                flex-direction: column;
+                border-radius: 0.6vw;
   
             } 
   
@@ -427,11 +428,11 @@
               }
                 .score{
                   margin-bottom: 1vw;
-                  width: 1.3vw;
+                  width: 4.3vw;
                 }
                 .person{
                   margin-right: 1vw;
-                  width: 2.5vw;
+                  width: 6.5vw;
                 }
               
               .notes_div_text{
@@ -439,17 +440,17 @@
                 flex-direction: column;
                 border-radius: 2vw;
                 background-color: #363636;
-                width: 50vw;
-                margin: 1vw 0 0 8.3vw;
-                height: 9vw;
+                width: 77vw;
+                margin: 1vw auto 2.3vw auto;
+                height: 35vw;
                 padding: 1vw;
-                font-size: 1.1vw;
+                font-size: 3.6vw;
               }
               .notes_div_text + .notes_div_text{
-                height: 16vw;
+                height: 75vw;
               }
               .notes_div_text + .notes_div_text + .notes_div_text{
-                height: 11vw;
+                height: 45vw;
               }
   
 
