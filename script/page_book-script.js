@@ -52,6 +52,7 @@ buttons.forEach(function(button){
 		console.log(button + " is click")
 		switch(true){
 			case button.id == "about_book-id" || "about_book-id-desk" : if(naw_square.className != "naw_sqre-left" && naw_square_desk.className != "naw_sqre-left") {
+				console.log("if accepted")
 				toggle_divs(button); 
 				naw_square.className = "naw_sqre-left"
 				naw_square_desk.className = "naw_sqre-left"
@@ -76,30 +77,30 @@ buttons.forEach(function(button){
 		switch(true){
 			case div.id == "about_book-id" || "about_book-id-desk" : if (naw_square.className != "naw_sqre-left" && naw_square_desk.className != "naw_sqre-left"){ 
 				console.log("left");
-				notes_div.classList = "inactive";
-				notes_div_desk.classList = "inactive";
-				quotes_div.classList = "inactive";
-				quotes_book_div_desk.classList = "inactive";
-				about_book_div.classList = "about_book-active"
-				about_book_div_desk.classList = "about_book-active"
+				notes_div.className = "inactive";
+				notes_div_desk.className = "inactive";
+				quotes_div.className = "inactive";
+				quotes_book_div_desk.className = "inactive";
+				about_book_div.className = "about_book-active";
+				about_book_div_desk.className = "about_book-active";
 		};break
 			case div.id == "quotes-id" || "quotes-id-desk" : if(naw_square.className != "naw_sqre-center" && naw_square_desk.className != "naw_sqre-center"){
 				console.log("center");
-				about_book_div.classList = "inactive"; 
-				about_book_div_desk.classList = "inactive"; 
-				notes_div.classList = "inactive";
-				notes_div_desk.classList = "inactive";
-				quotes_div.classList = "quotes_book_div-active"
-				quotes_book_div_desk.classList = "quotes_book_div-active" 
+				about_book_div.className = "inactive"; 
+				about_book_div_desk.className = "inactive"; 
+				notes_div.className = "inactive";
+				notes_div_desk.className = "inactive";
+				quotes_div.className = "quotes_book_div-active"
+				quotes_book_div_desk.className = "quotes_book_div-active" 
 		}; break
 			case div.id == "notes-id" || "notes-id-desk" : if(naw_square.className != "naw_sqre-right" && naw_square_desk.className != "naw_sqre-right"){
 				console.log("right");
-				about_book_div.classList = "inactive";
-				about_book_div_desk.classList = "inactive";
-				quotes_div.classList = "inactive";
-				quotes_book_div_desk.classList = "inactive";
-				notes_div.classList = "notes_div"
-				notes_div_desk.classList = "notes_div"
+				about_book_div.className = "inactive";
+				about_book_div_desk.className = "inactive";
+				quotes_div.className = "inactive";
+				quotes_book_div_desk.className = "inactive";
+				notes_div.className = "notes_div"
+				notes_div_desk.className = "notes_div"
 		}; break
 
 		}
