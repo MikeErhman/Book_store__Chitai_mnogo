@@ -35,15 +35,15 @@ console.log("SQRE " + naw_square.classList)
 
 
 
-var buttons = [about_book, quotes, notes]
-var buttons_desk = [about_book_desk, quotes_desk, notes_desk]
+var buttons = [about_book, quotes, notes];
+var buttons_desk = [about_book_desk, quotes_desk, notes_desk];
 
 
 
-// function define_button(button){
-// 	naw_square.classList.remove('"'+butt+'"')
-// 	button.classList.add("")
-// }
+function define_button(button){
+	naw_square.classList.remove('"'+butt+'"')
+	button.classList.add("")
+}
 
 
 
@@ -88,7 +88,7 @@ buttons_desk.forEach(function(button){
 				console.log("right");
 				about_book_div_desk.className = "inactive";
 				quotes_book_div_desk.className = "inactive";
-				notes_div_desk.className = "notes_div"
+				notes_div_desk.className = "notes_div";
 		}; break
 
 		}
@@ -115,7 +115,7 @@ buttons.forEach(function(button){
 				break
 			case button.id == "notes-id" : if(naw_square.className != "naw_sqre-right"){
 				toggle_divs(button);
-				naw_square.className = "naw_sqre-right"
+				naw_square.className = "naw_sqre-right";
 			};
 				break
 			
