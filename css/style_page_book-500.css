@@ -161,11 +161,11 @@
                         }
     
                     .menu_book {
-                        margin-left: 5px;
-                        margin-right: 5px;
-                        display: flex;
-                        flex-direction: row;
-                        color: white;
+                      margin-left: 1vw;
+                      margin-right: 1vw;
+                      display: flex;
+                      flex-direction: row;
+                      color: white;
                     }
                         .menu_book__btn{
                             width: 6vw;
@@ -173,7 +173,7 @@
         
                         .menu_book .menu_book__text {
                             font-family: 'Ubuntu', sans-serif;
-                            width: 35px; 
+                            width: 7vw; 
                             margin-left: 1vw;  
                             margin-top: 2vw;
                             font-size: 2vw;
@@ -181,22 +181,22 @@
                         .text {
                             font-family: 'Ubuntu', sans-serif;
                             width: 21vw;
-                            height: 30px;
+                            height: 7vw;
                             border: none;
                             border-radius: 0.6vw; 
-                            margin-top: 4px;
+                            margin-top: 1vw;
                         }
                         .srch_btn {
                             position: relative;
                             background-color: #3CBB9D;
-                            margin-left: 4px;
-                            height: 30px;
+                            margin-left: 1vw;
+                            height: 7vw;
                             width: 7vw;
                             border: none;
                             border-radius: 0.6vw;
                             color: white;
                             align-items: center;
-                            margin-top: 4px;
+                            margin-top: 1vw;
                            }
                             .search_btn_text{
                                 text-decoration: none;
@@ -381,6 +381,7 @@
             border-radius: 0.6vw; 
   
           }
+  
             .name_div{
               margin-top: 3vw;
               margin-left: 7vw;
@@ -397,7 +398,7 @@
             }
               .qoutes_book__text::before{
                 content: "“";     /* Левая кавычка */
-                font-size: 4vw;     /* Размер текста кавычек */
+                font-size: 7vw;     /* Размер текста кавычек */
                 color: #3CBB9D;   /* Цвет кавычек */
                 line-height: 0vw;     /* Текст не занимает место */
                }

@@ -457,10 +457,10 @@ html{
             font-size: 1.1vw;
           }
             .qoutes_book__text::before{
-              content: "“";     /* Левая кавычка */
-              font-size: 4vw;     /* Размер текста кавычек */
-              color: #3CBB9D;   /* Цвет кавычек */
-              line-height: 0vw;     /* Текст не занимает место */
+              content: "“";    
+              font-size: 4vw;     
+              color: #3CBB9D;  
+              line-height: 0vw;     
              }
           .qoutes_book__text + .qoutes_book__text{
             height: 14vw;
