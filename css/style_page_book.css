@@ -290,7 +290,7 @@ html{
                 flex-direction: column;
                 background-color: #363636;
                 width: 36vw;
-                height: 27vw;
+                height: 100%;
                 margin: 2vw 0 0 3vw;
                 border-radius: 0.6vw;
                 font-size: 1.2vw;

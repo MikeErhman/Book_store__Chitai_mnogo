@@ -415,7 +415,7 @@
   
             .notes_div{
                 width: 80vw;
-                height: 170vw;
+                height: 100%;
                 margin-top: 3vw;
                 background-color: #ADADAD;
                 display: flex;
