@@ -232,7 +232,7 @@ html{
 
           	}
           	.books__day_book-div{
-          		margin-top: 2vw;
+          		margin-top: 5vw;
 				position: relative;
 				height: 100%;
 				width: 32vw;
@@ -285,7 +285,7 @@ html{
 	            text-align: center;
 	            font-size: 2vw;
 	            font-family: 'Ubuntu', sans-serif;
-	            top: 51.5vw;
+	            top: 54.5vw;
 	            left: 7vw;
           	}
 

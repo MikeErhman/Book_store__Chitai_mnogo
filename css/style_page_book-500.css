@@ -96,10 +96,10 @@
                         flex-direction: column;
                     }
                         .sandvich_line{
-                            height: 20px;
+                            height: 1vw;
                             width: 90%;
                             background-color: #3CBB9D;
-                            margin: 5px 0 4px 0;
+                            margin: 1vw 0 1vw 0;
                         }
     
                        .menu_and_slider .sandwich_inactive{
@@ -135,7 +135,7 @@
                     .logo{
                         /* text-align: center; */
                         font-size: 2.8vw;
-                        margin: 3vw 6vw auto 3vw;
+                        margin: 3vw 3vw auto 3vw;
                         color: #3CBB9D;
                     }
                         .logo a{
@@ -171,11 +171,11 @@
                             width: 6vw;
                         }
         
-                        .menu_book__text {
+                        .menu_book .menu_book__text {
                             font-family: 'Ubuntu', sans-serif;
                             width: 35px; 
-                            margin-left: 4px;  
-                            margin-top: 5px;
+                            margin-left: 1vw;  
+                            margin-top: 2vw;
                             font-size: 2vw;
                         }
                         .text {
