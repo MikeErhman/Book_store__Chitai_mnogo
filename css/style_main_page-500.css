@@ -175,22 +175,22 @@
                     .text {
                         font-family: 'Ubuntu', sans-serif;
                         width: 21vw;
-                        height: 30px;
+                        height: 8vw;
                         border: none;
-                        border-radius: 0.6vw; 
-                        margin-top: 4px;
+                        border-radius: 0.6vw;
+                        margin-top: 1vw;
                     }
                     .srch_btn {
                         position: relative;
                         background-color: #3CBB9D;
-                        margin-left: 4px;
-                        height: 30px;
+                        margin-left: 1vw;
+                        height: 8vw;
                         width: 7vw;
                         border: none;
                         border-radius: 0.6vw;
                         color: white;
                         align-items: center;
-                        margin-top: 4px;
+                        margin-top: 1vw;
                        }
                         .search_btn_text{
                             text-decoration: none;
