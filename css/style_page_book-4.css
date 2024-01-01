@@ -1,20 +1,78 @@
+.qoutes_book__text{
+	height: 8vw;
+}
+
+.qoutes_book__text + .qoutes_book__text{
+	height: 7vw;
+}
 
 .qoutes_book__text + 
 .qoutes_book__text +
 .qoutes_book__text{
-    height: 8vw;
-}
-
-.qoutes_book__text +
-.qoutes_book__text{
-    height: 12vw;
+	height: 9vw;
 }
 
 
-.notes_div_text + .notes_div_text{
-	height: 12vw;
+.notes_div_text{
+	display: flex;
+	flex-direction: column;
+	border-radius: 2vw;
+	background-color: #363636;
+	width: 50vw;
+	margin: 1vw 0 0 8.3vw;
+	height: 9vw;
+	padding: 1vw;
+	font-size: 1.1vw;
+  }
+  .notes_div_text + .notes_div_text{
+	height: 16vw;
+  }
+  .notes_div_text + .notes_div_text + .notes_div_text{
+	height: 10vw;
   }
 
-.notes_div_text + .notes_div_text + .notes_div_text{
-    height: 9vw;
-    }
+
+  @media (max-width:500px){
+
+	.quotes_book_div-active .qoutes_book__text{
+		height: 20vw;
+	}
+	
+	.quotes_book_div-active 
+	.qoutes_book__text + 
+	.qoutes_book__text{
+		height: 57vw;
+	}
+
+	.quotes_book_div-active 
+	.qoutes_book__text + 
+	.qoutes_book__text +
+	.qoutes_book__text{
+		height: 32vw;
+	}
+
+	#notes_div .notes_div_text{
+		display: flex;
+		flex-direction: column;
+		border-radius: 2vw;
+		background-color: #363636;
+		width: 77vw;
+		margin: 1vw auto 2.3vw auto;
+		height: 34vw;
+		padding: 1vw;
+		font-size: 3.6vw;
+	  }
+	  #notes_div 
+	  .notes_div_text + 
+	  .notes_div_text{
+		height: 60vw;
+	  }
+	  #notes_div 
+	  .notes_div_text + 
+	  .notes_div_text + 
+	  .notes_div_text{
+		height: 35vw;
+	  }
+
+	
+  }
