@@ -1,0 +1,38 @@
+:root {
+    --color-turquoise:rgb(60, 187, 157);
+  }
+
+.elastic{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    top: -0.39vw;
+    z-index: 12;
+    height: fit-content;
+    width: 45vw;
+    right: 28.45vw;
+    list-style: none;
+    padding: 0 2vw 0 2vw;
+    justify-items: center;
+    margin-top: 1vw;
+    font-size: 1.6vw;
+}
+    .elastic li{
+        background-color: rgba(98, 97, 97, 0.9) ;
+        border-bottom: 3px solid rgba(60, 187, 157, 0.4);
+        color: #fff;
+        width: 45vw;
+        border-radius: 1vw;
+        height: 6vw;
+    }
+
+        .elastic li img{
+            width: 3vw;
+            margin: 1vw 1vw -1.5vw 1vw;
+        }
+
+.hide{
+    display: none;
+    height: 0;
+}
