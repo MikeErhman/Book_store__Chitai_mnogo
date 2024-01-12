@@ -104,14 +104,14 @@
         font-size: 2.3vw;
       }
 
-    .eclastic_items_mob{
+    .elastic_items_mob{
         position: absolute;
         top: 13vw;
         z-index: 11;
         left: 1vw;
     }
 
-    .eclastic_items_mob li {
+    .elastic_items_mob li {
         background-color: rgba(98, 97, 97, 0.9);
         border-bottom: 3px solid rgba(60, 187, 157, 0.4);
         color: #fff;
@@ -120,7 +120,7 @@
         height: 10vw;
         font-size: 3.5vw;
     }
-    .eclastic_items_mob li img {
+    .elastic_items_mob li img {
         width: 5vw;
         margin: 1vw 1vw -1.5vw 1vw;
       }
