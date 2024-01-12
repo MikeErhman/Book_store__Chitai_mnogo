@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style_main_page-1920.css">
 	<link rel="stylesheet" type="text/css" href="css/style_main_page-1130.css">
 	<link rel="stylesheet" type="text/css" href="css/style_main_page-500.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
 
 </head>
 <body>
@@ -42,15 +43,23 @@
 								<div class="swiper-slide" ><img id="swiper_2-500" src="images/slide2-500.png" alt=""></div>
 							</div>
 						</div>
-						
+							<input type="text" placeholder="Поиск" class="text text_wide" id="elastic_mob">
+							<button class="inp_butt_wide" id="inp_butt_wide"><img src="images/icons/search.svg" class="srch__icon"></button>
+							<ul class="elastic_items_mob">
+								<a href="pages/page_book-1.html"><li class="hide"><img src="images/Книги/65834170.jpg" alt="">Читайте книгу как людей</li></a>
+								<a href="pages/page_book-2.html"><li class="hide"><img src="images/Книги/48508375.jpg" alt="">Выбор</li></a>
+								<a href="pages/page_book-3.html"><li class="hide"><img src="images/Книги/66846728.jpg" alt="">Леди из  Фроингейма</li></a>
+								<a href="pages/page_book-4.html"><li class="hide"><img src="images/Книги/67066479.jpg" alt="">Родная кровь</li></a>
+								<a href="pages/page_book-5.html"><li class="hide"><img src="images/Книги/67259720.jpg" alt="">Один год жизни</li></a>
+								<a href="pages/page_book-6.html"><li class="hide"><img src="images/Книги/68708631.jpg" alt="">Тьма после рассвета</li></a>
+								<a href="pages/page_book-7.html"><li class="hide"><img src="images/Книги/68807766.jpg" alt="">Жилой комплекс курицын</li></a>
+							</ul>
 						<div class="logo_search_buttons">
-							<!-- <a href="" id="sandwich_click"> -->
 								<div class="sandwich" id="sandwich">
 									<div class="sandvich_line"></div>
 									<div class="sandvich_line"></div>
 									<div class="sandvich_line"></div>
 								</div>
-							<!-- </a> -->
 							<div class="logo">
 								<a href="index.html">ЧитайМного.ру</a>
 							</div>
@@ -62,11 +71,12 @@
 								<image src="images/icons/menu_book_turquoise.svg" class="menu_book__btn"></image>
 								<p class="menu_book__text">Мои книги</p>
 							</div>
-							<input placeholder="Поиск" type="text" class="text">
-							<button class="srch_btn">
+							
+							<input placeholder="Поиск" type="text" class="text" id="text">
+						
+							<button class="srch_btn" id="inp_butt">
 								<image src="images/icons/search.svg" class="srch__icon"></image>
 							</button>
-		
 						</div>
 					</div>
 						 
@@ -145,8 +155,11 @@
 							<a href="index.html">ЧитайМного.ру</a>
 						</div>
 
+					
+							<input placeholder="Поиск" type="text" class="text" id="elastic">
+								
+						
 
-						<input placeholder="Поиск" type="text" class="text">
 						<a class="search_btn_text" href="pages/book_1121.html">
 							<button  class="search_btn">
 								<p>Найти</p>
@@ -169,6 +182,15 @@
 
 
 					<section class="books">
+						<ul class="elastic">
+							<a href="pages/page_book-1.html"><li class="hide"><img src="images/Книги/65834170.jpg" alt="">Читайте книгу как людей</li></a>
+								<a href="pages/page_book-2.html"><li class="hide"><img src="images/Книги/48508375.jpg" alt="выбор">Выбор</li></a>
+								<a href="pages/page_book-3.html"><li class="hide"><img src="images/Книги/66846728.jpg" alt="леди из фроингейма">Леди из  Фроингейма</li></a>
+								<a href="pages/page_book-4.html"><li class="hide"><img src="images/Книги/67066479.jpg" alt="">Родная кровь</li></a>
+								<a href="pages/page_book-5.html"><li class="hide"><img src="images/Книги/67259720.jpg" alt="">Один год жизни</li></a>
+								<a href="pages/page_book-6.html"><li class="hide"><img src="images/Книги/68708631.jpg" alt="">Тьма после рассвета</li></a>
+								<a href="pages/page_book-7.html"><li class="hide"><img src="images/Книги/68807766.jpg" alt="">Жилой комплекс курицын</li></a>
+						</ul>
 						<section class="books__day_book">
 							<p class="books__day_book-title">Книга дня</p>
 							<div class="books__day_book-div">
@@ -245,6 +267,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="script/slider.js"></script>
 <script type="text/javascript" src="script/sandwich_script.js"></script>
+<script type="text/javascript" src="script/live_search.js"></script>
 
 </body>
 </html>
