@@ -157,6 +157,7 @@ html{
               background-color: #626161;
               height: 53vw;
               width: 89vw;
+              position: relative;
             }
               .book_of_day__img{
                 height: 47vw;
@@ -434,12 +435,13 @@ html{
 
         .quotes_book_div-active{
           width: 67vw;
-          height: 44vw;
+          height: fit-content;
           margin-top: 3vw;
           background-color: #ADADAD;
           display: flex;
           flex-direction: column;
           border-radius: 0.6vw; 
+          padding-bottom: 2vw;
 
         }
           .name_div{
@@ -452,9 +454,10 @@ html{
             background-color: #363636;
             width: 50vw;
             margin: 0.3vw auto 1vw auto;
-            height: 7vw;
             padding: 2vw 1vw 0 1vw;
             font-size: 1.1vw;
+            height: fit-content;
+            padding-bottom: 2vw;
           }
             .qoutes_book__text::before{
               content: "“";    
@@ -462,25 +465,19 @@ html{
               color: #3CBB9D;  
               line-height: 0vw;     
              }
-          .qoutes_book__text + .qoutes_book__text{
-            height: 14vw;
-          }
-
-          .qoutes_book__text + .qoutes_book__text + .qoutes_book__text{
-            height: 13vw;
-
-          }
+   
 
 
 
           .notes_div{
             width: 67vw;
-            height: 44vw;
+            height: fit-content;
             margin-top: 3vw;
             background-color: #ADADAD;
             display: flex;
             flex-direction: column;
             border-radius: 0.6vw;
+            padding-bottom: 2vw;
 
           } 
 
@@ -504,14 +501,11 @@ html{
               background-color: #363636;
               width: 50vw;
               margin: 1vw 0 0 8.3vw;
-              height: 9vw;
-              padding: 1vw;
               font-size: 1.1vw;
+              padding: 1vw;
+              height: fit-content;
+              padding-bottom: 2vw;
+              
             }
-            .notes_div_text + .notes_div_text{
-              height: 16vw;
-            }
-            .notes_div_text + .notes_div_text + .notes_div_text{
-              height: 11vw;
-            }
+          
 

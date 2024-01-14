@@ -373,13 +373,13 @@
 
         .quotes_book_div-active{
             width: 80vw;
-            height: 152vw;
+            height: fit-content;
             margin-top: 3vw;
             background-color: #ADADAD;
             display: flex;
             flex-direction: column;
             border-radius: 0.6vw; 
-  
+            padding-bottom: 4vw;
           }
   
             .name_div{
@@ -392,9 +392,10 @@
               background-color: #363636;
               width: 76vw;
               margin: 0.3vw auto 1vw auto;
-              height: 40vw;
+              height: fit-content;
               padding: 2vw 1vw 0 1vw;
               font-size: 3.6vw;
+              padding-bottom: 4vw;
             }
               .qoutes_book__text::before{
                 content: "“";     /* Левая кавычка */
@@ -402,25 +403,18 @@
                 color: #3CBB9D;   /* Цвет кавычек */
                 line-height: 0vw;     /* Текст не занимает место */
                }
-            .qoutes_book__text + .qoutes_book__text{
-                height: 50vw;
-            }
-  
-            .qoutes_book__text + .qoutes_book__text + .qoutes_book__text{
-              height: 45vw;
-  
-            }
-  
+ 
   
   
             .notes_div{
                 width: 80vw;
-                height: 100%;
+                height: fit-content;
                 margin-top: 3vw;
                 background-color: #ADADAD;
                 display: flex;
                 flex-direction: column;
                 border-radius: 0.6vw;
+                padding-bottom: 4vw;
   
             } 
   
@@ -443,16 +437,12 @@
                 background-color: #363636;
                 width: 77vw;
                 margin: 1vw auto 2.3vw auto;
-                height: 35vw;
+                height: fit-content;
                 padding: 1vw;
+                padding-bottom: 4vw;
                 font-size: 3.6vw;
               }
-              .notes_div_text + .notes_div_text{
-                height: 75vw;
-              }
-              .notes_div_text + .notes_div_text + .notes_div_text{
-                height: 45vw;
-              }
+       
   
 
 
