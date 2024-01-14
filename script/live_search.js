@@ -1,4 +1,6 @@
 
+let searchMob 
+
 console.log(window.innerWidth);
 window.addEventListener("click", function(click){
     let valueOfId = "#" + click.target.id 
@@ -7,6 +9,7 @@ document.querySelector(inputId).addEventListener("input", function(){
         let val =  this.value.trim(),
         elastic_items = document.querySelectorAll(".elastic li"),
         elastic_items_mob = document.querySelectorAll(".elastic_items_mob li");
+        searchMob = elastic_items_mob
     function elasticSearch(elasticContent){
         if(val != ''){
             elasticContent.forEach(function(elem){
@@ -61,6 +64,11 @@ body.addEventListener("click", function(click){
         logo_search_buttons.style.display = ("flex");
         text_wide_mob.style.display = ("none");
         inp_butt_wide.style.display = ("none");
+        if(searchMob !== undefined) {
+            searchMob.forEach(function(items){
+            items.className = ("hide")
+        })
+    }
         }
         
     }
