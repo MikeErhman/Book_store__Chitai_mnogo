@@ -157,6 +157,7 @@ html{
               background-color: #626161;
               height: 53vw;
               width: 89vw;
+              position: relative;
             }
               .book_of_day__img{
                 height: 47vw;
@@ -434,12 +435,13 @@ html{
 
         .quotes_book_div-active{
           width: 67vw;
-          height: 44vw;
+          height: fit-content;
           margin-top: 3vw;
           background-color: #ADADAD;
           display: flex;
           flex-direction: column;
           border-radius: 0.6vw; 
+          padding-bottom: 2vw;
 
         }
           .name_div{
@@ -469,12 +471,13 @@ html{
 
           .notes_div{
             width: 67vw;
-            height: 44vw;
+            height: fit-content;
             margin-top: 3vw;
             background-color: #ADADAD;
             display: flex;
             flex-direction: column;
             border-radius: 0.6vw;
+            padding-bottom: 2vw;
 
           } 
 

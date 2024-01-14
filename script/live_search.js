@@ -13,7 +13,7 @@ document.querySelector(inputId).addEventListener("input", function(){
     function elasticSearch(elasticContent){
         if(val != ''){
             elasticContent.forEach(function(elem){
-                if(elem.innerText.toLowerCase().search(val) != -1 && elem.innerText != ''){
+                if(elem.innerText.toLowerCase().search(val.toLowerCase()) != -1 && elem.innerText != ''){
                     elem.classList.remove("hide");
         
                 }

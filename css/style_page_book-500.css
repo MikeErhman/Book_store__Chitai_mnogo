@@ -373,13 +373,13 @@
 
         .quotes_book_div-active{
             width: 80vw;
-            height: 152vw;
+            height: fit-content;
             margin-top: 3vw;
             background-color: #ADADAD;
             display: flex;
             flex-direction: column;
             border-radius: 0.6vw; 
-  
+            padding-bottom: 4vw;
           }
   
             .name_div{
@@ -408,12 +408,13 @@
   
             .notes_div{
                 width: 80vw;
-                height: 100%;
+                height: fit-content;
                 margin-top: 3vw;
                 background-color: #ADADAD;
                 display: flex;
                 flex-direction: column;
                 border-radius: 0.6vw;
+                padding-bottom: 4vw;
   
             } 
   
