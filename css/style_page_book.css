@@ -159,7 +159,7 @@ html{
               width: 89vw;
               position: relative;
             }
-              .book_of_day__img{
+              .main_book_images{
                 height: 47vw;
                 width: 44vw;
                 margin: 2vw 0 0 3vw;
@@ -297,6 +297,9 @@ html{
                 font-size: 1.2vw;
                 font-weight: bold;
               }
+                .buy_form a{
+                  text-decoration: none ;
+                }
                 .btn_buy{
                   margin: 1vw 0 0 4.4vw;
                   padding-top: 0.7vw;
@@ -305,6 +308,7 @@ html{
                   background-color: #3CBB9D;
                   border-radius: 0.6vw;
                   text-align: center;
+                  color: white;
 
                 }
                 .table_prices{

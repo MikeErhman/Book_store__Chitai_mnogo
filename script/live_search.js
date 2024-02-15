@@ -1,10 +1,15 @@
 
-let searchMob 
+let searchMob;
 
-console.log(window.innerWidth);
-window.addEventListener("click", function(click){
+try {
+    window.addEventListener("click", function(click){
     let valueOfId = "#" + click.target.id 
+
 function elastic(inputId){
+    if(valueOfId == "#"+ ""){
+
+    }else{
+
 document.querySelector(inputId).addEventListener("input", function(){
         let val =  this.value.trim(),
         elastic_items = document.querySelectorAll(".elastic li"),
@@ -39,9 +44,15 @@ document.querySelector(inputId).addEventListener("input", function(){
             elasticSearch(elastic_items_mob);
         }
     })
-    }   
+    }}   
 elastic(String(valueOfId))
 })
+
+} catch (error) {
+    console.log("input empty")
+} 
+
+
 
 
 let inp_text = document.querySelector('#text'),

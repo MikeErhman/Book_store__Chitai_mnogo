@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/style_main_page-500.css">
     <link rel="stylesheet" type="text/css" href="../css/style_page_book-500.css">
 	<link rel="stylesheet" type="text/css" href="../css/search.css">
+	<link rel="stylesheet" href="../css/style_popupPayment.css">
 	
 </head>
 <body>
@@ -27,18 +28,18 @@
 				</div>
 				<div class="slider-500">
 					<div class="shadow"></div>
-					<img class="book_prew" src="../images/Книги/48508375.jpg" alt="" srcset="">
+					<img class="book_prew" src="../images/book_images/48508375.jpg" alt="" srcset="">
 					<p class="books-title_section">Выбор.</p>
 					<input type="text" placeholder="Поиск" class="text text_wide" id="elastic_mob">
 							<button class="inp_butt_wide" id="inp_butt_wide"><img src="../images/icons/search.svg" class="srch__icon"></button>
 							<ul class="elastic_items_mob">
-								<a href="../pages/page_book-1.html"><li class="hide"><img src="../images/Книги/65834170.jpg" alt="">Читайте книгу как людей</li></a>
-								<a href="../pages/page_book-2.html"><li class="hide"><img src="../images/Книги/48508375.jpg" alt="">Выбор</li></a>
-								<a href="../pages/page_book-3.html"><li class="hide"><img src="../images/Книги/66846728.jpg" alt="">Леди из  Фроингейма</li></a>
-								<a href="../pages/page_book-4.html"><li class="hide"><img src="../images/Книги/67066479.jpg" alt="">Родная кровь</li></a>
-								<a href="../pages/page_book-5.html"><li class="hide"><img src="../images/Книги/67259720.jpg" alt="">Один год жизни</li></a>
-								<a href="../pages/page_book-6.html"><li class="hide"><img src="../images/Книги/68708631.jpg" alt="">Тьма после рассвета</li></a>
-								<a href="../pages/page_book-7.html"><li class="hide"><img src="../images/Книги/68807766.jpg" alt="">Жилой комплекс курицын</li></a>
+								<a href="../pages/page_book-1.html"><li class="hide"><img src="../images/book_images/65834170.jpg" alt="">Читайте книгу как людей</li></a>
+								<a href="../pages/page_book-2.html"><li class="hide"><img src="../images/book_images/48508375.jpg" alt="">Выбор</li></a>
+								<a href="../pages/page_book-3.html"><li class="hide"><img src="../images/book_images/66846728.jpg" alt="">Леди из  Фроингейма</li></a>
+								<a href="../pages/page_book-4.html"><li class="hide"><img src="../images/book_images/67066479.jpg" alt="">Родная кровь</li></a>
+								<a href="../pages/page_book-5.html"><li class="hide"><img src="../images/book_images/67259720.jpg" alt="">Один год жизни</li></a>
+								<a href="../pages/page_book-6.html"><li class="hide"><img src="../images/book_images/68708631.jpg" alt="">Тьма после рассвета</li></a>
+								<a href="../pages/page_book-7.html"><li class="hide"><img src="../images/book_images/68807766.jpg" alt="">Жилой комплекс курицын</li></a>
 							</ul>
 					<div class="logo_search_buttons">
 				
@@ -198,6 +199,78 @@
 		
 
 		<div class="container">
+			<div class="popupShadow">			
+				<div class="popupPayment">
+				<div class="popupPayment_title">
+					<div class="popupPayment_title_imgAndText">
+						<img src="../images/book_images/65834170.jpg" id="book_image" alt="">
+						<div class="popupPayment_title_text">
+							<p id="popupNameBook">Читайте людей как книгу. Как анализировать, понимать и предсказывать эмоции, мысли, намерения и поведение людей</p>
+							<p id="popupTitleBook">
+								Описание книги<br>
+								В этой книге Патрика Кинга, автора мировых бестселлеров в области 
+								навыков социальной коммуникации, рассмотрены способы, с помощью которых можно развить умение «читать» и анализировать людей, их характер, поведение, мотивацию, невысказанные намерения. Этот навык бесценен в социуме.
+							</p>
+						</div>
+					</div>
+						<div class="buy_form">
+							<div class="table_prices">
+								<table>
+									<tr>
+										<th class="th_price_book" >Стоимость книги</th>
+										<th class="th_sum">2099р</th>
+									</tr>
+									<tr>
+										<th class="th_price_book" >Скидка 50%</th>
+										<th class="th_sum">1999р</th>
+									</tr>
+									<tr>
+										<th class="th_price_book" >Начисление бонусов</th>
+										<th class="th_sum">99р.</th>
+									</tr>
+								</table>
+								<div class="horLine"></div>
+									<div class="final_price">
+										<p class="final_price_text">Итого</p>
+										<p class="final_price_num">1000р.</p>
+									</div>
+							</div>
+						</div>
+				</div>
+				<div class="popupPayment_buyForm">
+					<h4>Быстрая оплата через СБ Онлайн</h4>
+					<div class="inputAndButton">
+						<p>Введите номер</p>
+						<input type="text" class="formInput" placeholder="+7 XXX-XXX-XX-XX">
+						<button class="formInput_button">Оплатить</button>
+					</div>
+				</div>
+				<div class="popupPayment_buyType">
+					<div class="popupPayment_buyForm_item">
+						<img src="../images/logoVisa_Mast_Mir.png" class="popupPayment_buyType-img" alt="">
+					</div>
+					<div class="popupPayment_buyForm_item active-buyType">
+						<img src="../images/sberPay.jpg" class="popupPayment_buyType-img" alt="">
+					</div>
+					<div class="popupPayment_buyForm_item">
+						<img src="../images/paypal.png" class="popupPayment_buyType-img" alt="">
+					</div>
+					<div class="popupPayment_buyForm_item">
+						<img src="../images/yuoMoney.png" class="popupPayment_buyType-img" alt="">
+					</div>
+					<div class="popupPayment_buyForm_item">
+						<p class="buy_buyType_text">
+							Оплата другими способами...
+						</p>	
+						<img src="../images/qiwiwi.png" class="popupPayment_buyType-icon" alt="">
+						<img src="../images/fk.png" class="popupPayment_buyType-icon" alt="">
+						<p class="dotes">. . .</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
 			<section class="menu_and_search">
 
 				<div class="logo"><a href="../index.html">ЧитайМного.ру</a></div>
@@ -222,15 +295,15 @@
 
 			<section class="book__title_and_price">
 				<ul class="elastic">
-					<a href="../pages/page_book-1.html"><li class="hide"><img src="../images/Книги/65834170.jpg" alt="">Читайте людей как книгу</li></a>
-					<a href="../pages/page_book-2.html"><li class="hide"><img src="../images/Книги/48508375.jpg" alt="">Выбор</li></a>
-					<a href="../pages/page_book-3.html"><li class="hide"><img src="../images/Книги/66846728.jpg" alt="">Леди из  Фроингейма</li></a>
-					<a href="../pages/page_book-4.html"><li class="hide"><img src="../images/Книги/67066479.jpg" alt="">Родная кровь</li></a>
-					<a href="../pages/page_book-5.html"><li class="hide"><img src="../images/Книги/67259720.jpg" alt="">Один год жизни</li></a>
-					<a href="../pages/page_book-6.html"><li class="hide"><img src="../images/Книги/68708631.jpg" alt="">Тьма после рассвета</li></a>
-					<a href="../pages/page_book-7.html"><li class="hide"><img src="../images/Книги/68807766.jpg" alt="">Жилой комплекс курицын</li></a>
+					<a href="../pages/page_book-1.html"><li class="hide"><img src="../images/book_images/65834170.jpg" alt="">Читайте людей как книгу</li></a>
+					<a href="../pages/page_book-2.html"><li class="hide"><img src="../images/book_images/48508375.jpg" alt="">Выбор</li></a>
+					<a href="../pages/page_book-3.html"><li class="hide"><img src="../images/book_images/66846728.jpg" alt="">Леди из  Фроингейма</li></a>
+					<a href="../pages/page_book-4.html"><li class="hide"><img src="../images/book_images/67066479.jpg" alt="">Родная кровь</li></a>
+					<a href="../pages/page_book-5.html"><li class="hide"><img src="../images/book_images/67259720.jpg" alt="">Один год жизни</li></a>
+					<a href="../pages/page_book-6.html"><li class="hide"><img src="../images/book_images/68708631.jpg" alt="">Тьма после рассвета</li></a>
+					<a href="../pages/page_book-7.html"><li class="hide"><img src="../images/book_images/68807766.jpg" alt="">Жилой комплекс курицын</li></a>
 				</ul>	
-					<img src="../images/Книги/48508375.jpg" alt="" class="book_of_day__img">
+					<img src="../images/book_images/48508375.jpg" alt="" class="main_book_images">
 					<div class="title">
 
 						<p class="title_of_book">Выбор.</p>
@@ -383,6 +456,7 @@
 	<script type="text/javascript" src="../script/sandwich_script.js"></script>
 	<script type="text/javascript" src="../script/page_book-script.js"></script>
 	<script type="text/javascript" src="../script/live_search.js"></script>
+	<script type="text/javascript" src="../script/buy_popup.js"></script>
 
 </body>
 </html>
