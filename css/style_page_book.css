@@ -32,7 +32,6 @@ html{
     border-radius: 0.6vw 0.6vw 0 0;
     width: 90%;
     height: 150%;
-/*    background-color: #626161;*/
     margin: auto;
 
   }
@@ -410,6 +409,11 @@ html{
         .inactive{
           display: none;
         }
+
+        .about_book{
+          cursor: pointer;
+        }
+
         .about_book-active{
           width: 70vw;
           height: 50vw;

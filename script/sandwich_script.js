@@ -1,5 +1,5 @@
-var sandwich = document.getElementById("sandwich")
-var sandwich_is_active = document.getElementById("sandwich_is_active")
+let sandwich = document.getElementById("sandwich")
+let sandwich_is_active = document.getElementById("sandwich_is_active")
 
 
     sandwich.addEventListener("click", function(){
