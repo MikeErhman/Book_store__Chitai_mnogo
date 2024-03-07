@@ -9,7 +9,9 @@ html{
     padding: 0;
 }
 
-
+body{
+	font-family: 'Ubuntu','Times New Roman', Times, serif;
+}
 
 .wrapper-500{
 	display: none;
@@ -98,7 +100,6 @@ html{
 
 		    }
 		    	.menu a {
-		          font-family: 'Ubuntu', sans-serif;
 		          margin: 0 10% 0 10%;
 		          text-decoration: none;
 		          outline: none;
@@ -125,7 +126,7 @@ html{
 			    	}
 
 			    .text {
-			        font-family: 'Ubuntu', sans-serif;
+			       
 			        width: 45vw;
 					height: 3.5vw;
 			        border: none;
@@ -137,7 +138,7 @@ html{
 				        padding: 1vh;
 				        padding-left: 3vw;
 				        font-size: 1.2vw;
-				        font-family: 'Ubuntu', sans-serif;
+				       
 				        height: 2vh;
 				    }
 				.search_btn {
@@ -177,7 +178,7 @@ html{
 			    	}
 
 			    	.login .login__text {
-				          font-family: 'Ubuntu', sans-serif;
+				         
 				          margin-left: 1vw;
 				          font-size: 1vw;
 				    }
@@ -193,7 +194,7 @@ html{
 			    	}
 
 				    .menu_book__text {
-				        font-family: 'Ubuntu', sans-serif;
+				       
 				        width: 5vw; 
 				        margin-left: 1vw;  
 				        font-size: 1vw;
@@ -228,7 +229,6 @@ html{
             	color: white;
             	text-align: center;
             	font-size: 2vw;
-            	font-family: 'Ubuntu', sans-serif;
 				margin-top: 2vw;
 
           	}
@@ -243,7 +243,7 @@ html{
               display: flex;
 			  margin: 125.5%  0 0 0;
               width: 100%;
-              font-family: 'Ubuntu', sans-serif;
+             
               height:5vw;
               background-color: rgba(0, 0, 0, .7);
               z-index: 8;
@@ -257,7 +257,6 @@ html{
           	.price_place{
 				display: flex;
 				color: white;
-				font-family: 'Ubuntu', sans-serif;
 				font-size: 1vw;
 				position: absolute;
 	            top: 1.5vw;
@@ -286,7 +285,7 @@ html{
 	            color: white;
 	            text-align: center;
 	            font-size: 2vw;
-	            font-family: 'Ubuntu', sans-serif;
+	           
 	            top: 54.5vw;
 	            left: 7vw;
           	}
@@ -318,7 +317,7 @@ html{
 				          text-align: center;
 				          color: white;
 				          font-size: 2vw;
-				          font-family: 'Ubuntu', sans-serif;
+				         
 				        }
 
 				          .sale_of_day__imgs{
@@ -338,7 +337,6 @@ html{
 				            .sale_of_day__div .price_place__sale{
 								display: flex;
 								color: white;
-								font-family: 'Ubuntu', sans-serif;
 								font-size: 1vw;
 								position: absolute;
 								top: 1.2vw;
@@ -357,7 +355,6 @@ html{
 				            .sale_of_day__div .price_place{
 								display: flex;
 								color: white;
-								font-family: 'Ubuntu', sans-serif;
 								font-size: 1vw;
 								position: absolute;
 								top: 1.2vw;
@@ -381,7 +378,7 @@ html{
 					              z-index: 11;
 					              border-radius: 0;
 					              color: white;
-					              font-family: 'Ubuntu', sans-serif;
+					             
 					              font-size: 0.9vw;
 					              align-items: center;
 					              padding: 1vw;
@@ -400,7 +397,7 @@ html{
 							        background-color: #3CBB9D;
 							        border:none;
 							        color: white;
-							        font-family: 'Ubuntu', sans-serif;
+							       
 							        font-size: 1.7vw;
 							        }
 

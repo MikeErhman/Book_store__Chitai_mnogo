@@ -300,6 +300,7 @@ html{
                   text-decoration: none ;
                 }
                 .btn_buy{
+                  cursor: pointer;
                   margin: 1vw 0 0 4.4vw;
                   padding-top: 0.7vw;
                   width: 27vw;
@@ -309,6 +310,9 @@ html{
                   text-align: center;
                   color: white;
 
+                }
+                .btn_buy:hover{
+                  background-color: #26e6b9;
                 }
                 .table_prices{
                   width: 36vw;
@@ -410,7 +414,7 @@ html{
           display: none;
         }
 
-        .about_book{
+        .about_book, .quotes_book, .notes_book{
           cursor: pointer;
         }
 

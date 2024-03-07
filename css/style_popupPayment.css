@@ -1,9 +1,9 @@
 .popupPayment{
     width: 64vw;
     height: 46vw;
-    position: absolute;
+    position: fixed;
     z-index: 15;
-    top: 4vw;
+    top: 2vw;
     left: 17.5vw;
     border-radius: 1vw;
 }
@@ -155,7 +155,7 @@
        padding: 1vw;
     }
     .active-buyType{
-        background-color: #3CBB9D;;
+        background-color: #3CBB9D;
     }
         .buy_buyType_text{
             width: 16vw;
@@ -179,16 +179,34 @@
             right: 4.5vw;
             bottom: 3.6vw;
         }
+
+
         
         
-        
+    
 .popupShadow{
-    display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 14;
     background-color: rgba(54, 54, 54, 0.78);
     width: 100%;
-    height: 300%;
+    height: 100%;
+
+}
+
+
+.show_animation{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+
+}
+
+.no_show{
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    visibility: hidden;
+
+    
 }

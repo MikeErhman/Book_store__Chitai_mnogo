@@ -1,15 +1,15 @@
-/*  
- html{
+ 
+ /* html{
     box-sizing: border-box;
-    /* background-color:#363636; */
-    /* background-color: #fff; */
-/* } */
+    background-color:#363636;
+    background-color: #fff;
+ } 
 
-/* *, *::after, *::before{ */
-    /* box-sizing: inherit; */
-    /* margin: 0; */
-    /* padding: 0; */
-/* }  */
+ *, *::after, *::before{ 
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}  */
  
 
 @media(max-width:500px){

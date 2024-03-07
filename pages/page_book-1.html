@@ -191,7 +191,7 @@
 
 		
 		<div class="container">
-			<div class="popupShadow">			
+			<div class="popupShadow no_show">			
 				<div class="popupPayment">
 				<div class="popupPayment_title">
 					<div class="popupPayment_title_imgAndText">
@@ -239,19 +239,21 @@
 					</div>
 				</div>
 				<div class="popupPayment_buyType">
-					<div class="popupPayment_buyForm_item">
-						<img src="../images/logoVisa_Mast_Mir.png" class="popupPayment_buyType-img" alt="">
+					<div class="popupPayment_buyForm_item" id="buyType_card">
+						<div class="inactive_buyType">
+							<img src="../images/logoVisa_Mast_Mir.png" class="popupPayment_buyType-img" alt="">
+						</div>
 					</div>
-					<div class="popupPayment_buyForm_item active-buyType">
+					<div class="popupPayment_buyForm_item" id="buyTupe_sberPay">
 						<img src="../images/sberPay.jpg" class="popupPayment_buyType-img" alt="">
 					</div>
-					<div class="popupPayment_buyForm_item">
+					<div class="popupPayment_buyForm_item" id="buyTupe_payPal">
 						<img src="../images/paypal.png" class="popupPayment_buyType-img" alt="">
 					</div>
-					<div class="popupPayment_buyForm_item">
+					<div class="popupPayment_buyForm_item" id="buyTupe_youMoney">
 						<img src="../images/yuoMoney.png" class="popupPayment_buyType-img" alt="">
 					</div>
-					<div class="popupPayment_buyForm_item">
+					<div class="popupPayment_buyForm_item" id="buyTupe_other">
 						<p class="buy_buyType_text">
 							Оплата другими способами...
 						</p>	
@@ -260,7 +262,7 @@
 						<p class="dotes">. . .</p>
 
 					</div>
-				</div>
+				</div>		
 			</div>
 		</div>
 
@@ -329,11 +331,9 @@
 						</div>
 					</div>
 					<div class="buy_form">
-						<a class="buyClick" href="#">
 							<div class="btn_buy">
 								Купить и скачать за 999р
-							</div>
-						</a>	
+							</div>	
 
 						<div class="table_prices">
 							<table>
