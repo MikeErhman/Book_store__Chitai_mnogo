@@ -306,6 +306,7 @@ html{
                   width: 27vw;
                   height: 3vw;
                   background-color: #3CBB9D;
+                  transition: background-color 0.3s;
                   border-radius: 0.6vw;
                   text-align: center;
                   color: white;
@@ -313,6 +314,7 @@ html{
                 }
                 .btn_buy:hover{
                   background-color: #26e6b9;
+                  transition: background-color 0.3s;
                 }
                 .table_prices{
                   width: 36vw;

@@ -19,12 +19,20 @@ const popup = document.querySelector(".popupShadow");
 
  const popupPayment_buyType = document.querySelector(".popupPayment_buyType")
 
-    let buyType_card = document.querySelector("#buyType_card"),
+    const buyType_card = document.querySelector("#buyType_card"),
+    buyType_card_img = document.querySelector("#buyType_card-img"),
     buyTupe_sberPay = document.querySelector("#buyTupe_sberPay"),
+    buyType_sberPay_img = document.querySelector("#buyType_sberPay-img"),
     buyTupe_payPal = document.querySelector("#buyTupe_payPal"),
+    buyType_paypal_img = document.querySelector("#buyType_paypal-img"),
     buyTupe_youMoney = document.querySelector("#buyTupe_youMoney"),
+    buyType_youModey_img = document.querySelector("#buyType_youModey-img"),
     buyTupe_other = document.querySelector("#buyTupe_other")
-    // const = popupPayment_buyType = document.querySelector(".popupPayment_buyType")
+
+    const h4_description = document.querySelector("#h4_description"),
+    p_form_description = document.querySelector("#p_form_description"),
+    formInput = document = document.querySelector(".formInput")
+
 
     const arrayBuyType = [
         buyType_card,
@@ -35,34 +43,51 @@ const popup = document.querySelector(".popupShadow");
     ]
 
 function addClassRemove(click){
-    // console.log()
+    console.log(click)
     
     arrayBuyType.forEach((elem) => {elem.classList.remove("active-buyType") });
-    click.target.classList.add("active-buyType")
-}
+    if(click.target.className == "popupPayment_buyType-img") {
+        click.target.parentElement.classList.add("active-buyType")
+    }
+    if(click.target.className == "popupPayment_buyForm_item"){
+        click.target.classList.add("active-buyType")
+    }
+    if(click.target.parentElement.id == "buyTupe_other"){
+         click.target.parentElement.classList.add("active-buyType")
+    }
+    // console.log(click.target.value)
+  }
 
 popupPayment_buyType.addEventListener('click', function(click){
     // console.log()
     switch(true){
-        case click.target == buyType_card: 
-            console.log(click); 
+        case click.target == buyType_card || click.target == buyType_card_img: 
             addClassRemove(click);
-            break;
-        case click.target == buyTupe_sberPay:
-            console.log("card")
-            addClassRemove(click);
-             break;
-        case click.target == buyTupe_payPal :
-             console.log("payPal"); 
+            h4_description.innerText = "Оплата картой"
+            p_form_description.innerText = "Введите номер карты"
+            formInput.placeholder = "XXXX-XXXX-XXXX-XXXX"
 
-             addClassRemove(click);
+            break;
+        case click.target == buyTupe_sberPay || click.target == buyType_sberPay_img:
+            addClassRemove(click);
+            h4_description.innerText = "Оплата через СберPay"
+            p_form_description.innerText = "Введите номер телефона"
+            // formInput.style.fontSize = "3vw"
+            formInput.placeholder = "+7 XXX-XXX-XX-XX"
              break;
-        case click.target == buyTupe_youMoney:
-             console.log("youMoney"); 
+        case click.target == buyTupe_payPal || click.target == buyType_paypal_img:
              addClassRemove(click);
+             h4_description.innerText = "Оплата через Paypal "
+             p_form_description.innerText = "Введите Эл. Почту"
+             formInput.placeholder = "Example@mail.com"
              break;
-        case click.target == buyTupe_other:
-             console.log("other");
+        case click.target == buyTupe_youMoney || click.target == buyType_youModey_img: 
+             addClassRemove(click);
+             h4_description.innerText = "Оплата кошельком Youmoney"
+             p_form_description.innerText = "Введите номер телефона"
+             formInput.placeholder = "+7 XXX-XXX-XX-XX"
+             break;
+        case click.target == buyTupe_other || click.target.className == "buy_buyType_text" || click.target.className == "popupPayment_buyType-icon"  :
              addClassRemove(click);
              break;
     }
@@ -89,3 +114,45 @@ popupImage.attributes[0].nodeValue = bookImageMain.attributes[0].nodeValue;
 
 
 
+//MASKs
+
+window.addEventListener("DOMContentLoaded", function() {
+    [].forEach.call( document.querySelectorAll('.formInput'), function(input) {
+      var keyCode;
+      function mask(event) {
+        event.keyCode && (keyCode = event.keyCode);
+        var pos = this.selectionStart;
+        if (pos < 3) event.preventDefault();
+        var matrixPhone = "+7 (___) ___ ____",
+            i = 0,
+            def = matrixPhone.replace(/\D/g, ""),
+            val = this.value.replace(/\D/g, ""),
+            new_value = matrixPhone.replace(/[_\d]/g, function(a) {
+                return i < val.length ? val.charAt(i++) : a
+            });
+        i = new_value.indexOf("_");
+        if (i != -1) {
+            i < 5 && (i = 3);
+            new_value = new_value.slice(0, i)
+        }
+        var reg = matrixPhone.substr(0, this.value.length).replace(/_+/g,
+            function(a) {
+                return "\\d{1," + a.length + "}"
+            }).replace(/[+()]/g, "\\$&");
+        reg = new RegExp("^" + reg + "$");
+        if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
+          this.value = new_value;
+        }
+        if (event.type == "blur" && this.value.length < 5) {
+          this.value = "";
+        }
+      }
+  
+      input.addEventListener("input", mask, false);
+      input.addEventListener("focus", mask, false);
+      input.addEventListener("blur", mask, false);
+      input.addEventListener("keydown", mask, false);
+  
+    });
+  
+  });
