@@ -116,43 +116,70 @@ popupImage.attributes[0].nodeValue = bookImageMain.attributes[0].nodeValue;
 
 //MASKs
 
-window.addEventListener("DOMContentLoaded", function() {
-    [].forEach.call( document.querySelectorAll('.formInput'), function(input) {
-      var keyCode;
-      function mask(event) {
-        event.keyCode && (keyCode = event.keyCode);
-        var pos = this.selectionStart;
-        if (pos < 3) event.preventDefault();
-        var matrixPhone = "+7 (___) ___ ____",
-            i = 0,
-            def = matrixPhone.replace(/\D/g, ""),
-            val = this.value.replace(/\D/g, ""),
-            new_value = matrixPhone.replace(/[_\d]/g, function(a) {
-                return i < val.length ? val.charAt(i++) : a
-            });
-        i = new_value.indexOf("_");
-        if (i != -1) {
-            i < 5 && (i = 3);
-            new_value = new_value.slice(0, i)
-        }
-        var reg = matrixPhone.substr(0, this.value.length).replace(/_+/g,
-            function(a) {
-                return "\\d{1," + a.length + "}"
-            }).replace(/[+()]/g, "\\$&");
-        reg = new RegExp("^" + reg + "$");
-        if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
-          this.value = new_value;
-        }
-        if (event.type == "blur" && this.value.length < 5) {
-          this.value = "";
-        }
-      }
+// window.addEventListener("DOMContentLoaded", function() {
+//     [].forEach.call( document.querySelectorAll('.formInput'), function(input){
+//       var keyCode;
+//       function mask(event) {
+//         event.keyCode && (keyCode = event.keyCode);
+//         var pos = this.selectionStart;
+//         if (pos < 3) event.preventDefault();
+//         var matrixPhone = "+7 (___) ___ ____",
+//             i = 0,
+//             def = matrixPhone.replace(/\D/g, ""),
+//             val = this.value.replace(/\D/g, ""),
+//             new_value = matrixPhone.replace(/[_\d]/g, function(a) {
+//                 return i < val.length ? val.charAt(i++) : a
+//             });
+//         i = new_value.indexOf("_");
+//         if (i != -1) {
+//             i < 5 && (i = 3);
+//             new_value = new_value.slice(0, i)
+//         }
+//         var reg = matrixPhone.substr(0, this.value.length).replace(/_+/g,
+//             function(a) {
+//                 return "\\d{1," + a.length + "}"
+//             }).replace(/[+()]/g, "\\$&");
+//         reg = new RegExp("^" + reg + "$");
+//         if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
+//           this.value = new_value;
+//         }
+//         if (event.type == "blur" && this.value.length < 5) {
+//           this.value = "";
+//         }
+//       }
   
-      input.addEventListener("input", mask, false);
-      input.addEventListener("focus", mask, false);
-      input.addEventListener("blur", mask, false);
-      input.addEventListener("keydown", mask, false);
+//       input.addEventListener("input", mask, false);
+//       input.addEventListener("focus", mask, false);
+//       input.addEventListener("blur", mask, false);
+//       input.addEventListener("keydown", mask, false);
   
-    });
+//     });
   
-  });
+//   }
+
+// #########################
+
+// let input = document.querySelector(".formInput")
+
+// my_input_check = (event) => {
+//     !'ABCDEFGabcdefg#'.includes(event.key) && event.preventDefault();
+//     if (event.key === 'Enter') {
+             
+//     }                               
+// }
+
+
+
+
+let input = document.querySelector(".formInput")
+input.addEventListener("input", function(){
+    let regexpInput = /\d/g;
+    if(regexpInput.test(input.data)){
+        console.log("done")
+    }
+})
+
+
+// let regexpInput = /[0-9]/g
+
+// console.log(formInput.match())

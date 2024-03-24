@@ -420,6 +420,18 @@ html{
           cursor: pointer;
         }
 
+        .about_book{
+        
+
+        }
+
+        .about_book:hover{
+          background-color: #202020;
+          opacity: 0.5;
+          box-shadow: 0px -4px 12px 12px #202020;
+          transition: box-shadow 0.3s, background-color 0.3s;
+        }
+
         .about_book-active{
           width: 70vw;
           height: 50vw;
